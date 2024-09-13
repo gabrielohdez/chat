@@ -1,4 +1,6 @@
 import axios from 'axios';
+import { chunkText } from '../../lib/chunking'; // Función para dividir el texto en chunks
+import { getTextEmbedding, cosineSimilarity } from '../../lib/embeddings'; // Funciones para embeddings y similaridad
 import { readTXTFiles } from '../../lib/documentProcessor'; // Para leer los archivos TXT
 import clientPromise from '../../lib/mongoClient';
 
@@ -34,12 +36,37 @@ export default async function handler(req, res) {
     const documents = await readTXTFiles([document]); // Leer los archivos TXT
     const documentContent = documents.map(doc => doc.content).join('\n');
 
-    console.log('Generando respuesta con OpenAI...');
+    // Dividir el documento en chunks
+    const chunks = chunkText(documentContent);
+    console.log(`Documento dividido en ${chunks.length} chunks`);
+
+    // Obtener embeddings de la consulta
+    const queryEmbedding = await getTextEmbedding(message);
+
+    // Calcular embeddings de los chunks y seleccionar los más relevantes
+    const relevantChunks = [];
+    for (const chunk of chunks) {
+      const chunkEmbedding = await getTextEmbedding(chunk);
+      const similarity = cosineSimilarity(queryEmbedding, chunkEmbedding);
+      if (similarity > 0.8) { // Umbral de relevancia
+        relevantChunks.push(chunk);
+      }
+    }
+
+    // Si no hay chunks relevantes, devolver un mensaje genérico
+    if (relevantChunks.length === 0) {
+      return res.status(200).json({ message: 'No se encontraron secciones relevantes.' });
+    }
+
+    // Generar la respuesta usando los chunks más relevantes
+    const relevantText = relevantChunks.join('\n');
+    console.log(`Se enviarán ${relevantChunks.length} chunks a OpenAI`);
+
     const response = await axios.post('https://api.openai.com/v1/chat/completions', {
       model: 'gpt-3.5-turbo',
       messages: [
-        { role: 'system', content: 'You are an assistant that provides information based on the following documents.' },
-        { role: 'system', content: documentContent },
+        { role: 'system', content: 'You are an assistant that provides information based on the following sections of a document.' },
+        { role: 'system', content: relevantText },
         { role: 'user', content: message },
       ],
     }, {
@@ -51,7 +78,7 @@ export default async function handler(req, res) {
 
     const gptMessage = response.data.choices[0].message.content;
 
-    // Almacenar en MongoDB si la consulta es marcada como útil
+    // Almacenar en MongoDB si es útil
     if (useful) {
       console.log('Guardando la respuesta en MongoDB como útil');
       await collection.insertOne({
@@ -63,7 +90,6 @@ export default async function handler(req, res) {
       console.log('Respuesta guardada en MongoDB');
     }
 
-    // Devolver la respuesta generada
     res.status(200).json({ message: gptMessage });
   } catch (error) {
     console.error('Error en el handler:', error.message);
