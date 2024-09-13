@@ -51,13 +51,17 @@ export default async function handler(req, res) {
     const relevantChunks = [];
     chunkEmbeddings.forEach((chunkEmbedding, idx) => {
       const similarity = cosineSimilarity(queryEmbedding, chunkEmbedding);
-      if (similarity > 0.8) { // Umbral de relevancia
+      console.log(`Similitud del chunk ${idx}: ${similarity}`);
+      
+      // Cambiamos el umbral a 0.5 para aceptar más chunks como relevantes
+      if (similarity > 0.5) { 
         relevantChunks.push(chunks[idx]);
       }
     });
 
     // Si no hay chunks relevantes, devolver un mensaje genérico
     if (relevantChunks.length === 0) {
+      console.log('No se encontraron secciones relevantes');
       return res.status(200).json({ message: 'No se encontraron secciones relevantes.' });
     }
 
