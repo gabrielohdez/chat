@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { chunkText } from '../../lib/chunking'; // Función para dividir el texto en chunks
-import { getTextEmbedding, cosineSimilarity } from '../../lib/embeddings'; // Funciones para embeddings y similaridad
+import { getTextEmbeddingsBatch, cosineSimilarity } from '../../lib/embeddings'; // Funciones para embeddings y similaridad
 import { readTXTFiles } from '../../lib/documentProcessor'; // Para leer los archivos TXT
 import clientPromise from '../../lib/mongoClient';
 
@@ -40,18 +40,21 @@ export default async function handler(req, res) {
     const chunks = chunkText(documentContent);
     console.log(`Documento dividido en ${chunks.length} chunks`);
 
-    // Obtener embeddings de la consulta
+    // Obtener embeddings de los chunks en batch
+    const chunkEmbeddings = await getTextEmbeddingsBatch(chunks);
+    console.log('Embeddings de los chunks obtenidos');
+
+    // Obtener embedding de la consulta
     const queryEmbedding = await getTextEmbedding(message);
 
     // Calcular embeddings de los chunks y seleccionar los más relevantes
     const relevantChunks = [];
-    for (const chunk of chunks) {
-      const chunkEmbedding = await getTextEmbedding(chunk);
+    chunkEmbeddings.forEach((chunkEmbedding, idx) => {
       const similarity = cosineSimilarity(queryEmbedding, chunkEmbedding);
       if (similarity > 0.8) { // Umbral de relevancia
-        relevantChunks.push(chunk);
+        relevantChunks.push(chunks[idx]);
       }
-    }
+    });
 
     // Si no hay chunks relevantes, devolver un mensaje genérico
     if (relevantChunks.length === 0) {
@@ -78,7 +81,7 @@ export default async function handler(req, res) {
 
     const gptMessage = response.data.choices[0].message.content;
 
-    // Almacenar en MongoDB si es útil
+    // Almacenar en MongoDB si la consulta es marcada como útil
     if (useful) {
       console.log('Guardando la respuesta en MongoDB como útil');
       await collection.insertOne({
