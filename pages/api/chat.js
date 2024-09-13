@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { chunkText } from '../../lib/chunking'; // Función para dividir el texto en chunks
-import { getTextEmbeddingsBatch, cosineSimilarity } from '../../lib/embeddings'; // Funciones para embeddings y similaridad
+import { getTextEmbedding, getTextEmbeddingsBatch, cosineSimilarity } from '../../lib/embeddings'; // Funciones para embeddings y similaridad
 import { readTXTFiles } from '../../lib/documentProcessor'; // Para leer los archivos TXT
 import clientPromise from '../../lib/mongoClient';
 
