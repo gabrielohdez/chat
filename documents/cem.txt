@@ -1,0 +1,621 @@
+﻿Normativa este es el titulo del txt
+
+Metodología para el Control de la Calidad del Producto Técnico referente a la Regulación de la Tensión
+
+Diciembre 2014
+
+---
+
+ÍNDICE
+
+1. Introducción
+2. Regulación de la Tensión
+    - 2.1 Alcance de la Campaña de Medición
+    - 2.2 Equipo de Medición
+3. Implementación de Campaña de Medición
+4. Criterios para el Procesamiento de las Mediciones
+5. Información a Presentar a la SIGET
+    - 5.1 Información a Remitir Mensualmente
+    - 5.2 Información a Remitir Semestralmente
+    - 5.3 Información a Remitir Anualmente
+    - 5.4 Informe de la Calidad de Servicio y Suministro
+6. Anexos
+    - Anexo 1: Características del Equipo de Medición
+    - Anexo 2: Identificación de los Medios Informáticos
+    - Anexo 3: Formación del Nº SIGET y Denominación de los Archivos de las Mediciones
+    - Anexo 4: Modelo de Datos a Enviar a la Distribuidora
+    - Anexo 5: Modelo de Datos para el Envío de Información
+    - Anexo 6: Planilla de Instalación y Retiro
+    - Anexo 7: Equipos Autorizados por la SIGET para el Control de la Calidad
+
+---
+
+1. Introducción
+
+De acuerdo a lo establecido en las Normas de Calidad de Servicio de los Sistemas de Distribución, el control de la Calidad del Producto Técnico en lo referente a la Regulación de Tensión mediante campañas de medición en distintos puntos de la red, permite adquirir y procesar información sobre la regulación de tensión a nivel de suministro.
+
+---
+
+2. Regulación de la Tensión
+
+La calidad del producto con referencia a la regulación de la tensión, será efectuada por las Distribuidoras mediante mediciones en períodos mensuales, en la cantidad de usuarios establecidos en la Norma de Calidad de Servicio. Los usuarios finales deberán ser clasificados según la densidad de carga del área que les corresponda, y para definir la densidad de carga de cada área se deberá seguir lo indicado en el numeral 6 de la presente metodología. Se considera usuarios con servicio aislado a todos aquellos que se encuentran en áreas no interconectadas con el Sistema Nacional. La elección de los usuarios a ser considerados en los cuales se verificará la Calidad del Producto Técnico, será realizada por la SIGET aplicando criterios estadísticos que aseguren la aleatoriedad de los usuarios a ser medidos.
+
+2.1 Alcance de la Campaña de Medición
+
+Se deberá prever la realización de mediciones trifásicas en usuarios con suministro en BT en un porcentaje que contemple como mínimo el porcentaje de usuarios trifásicos respecto del total de usuarios al inicio de cada semestre de control. Se considerará que la cantidad de mediciones mensuales establecidas en las Normas de Calidad de Servicio corresponde a mediciones válidas, es decir, que no presentan inconvenientes que determinen su rechazo. La SIGET con personal propio o por contratación, podrá auditar la instalación y retiro de hasta la totalidad de mediciones que realice la Distribuidora.
+
+2.2 Equipo de Medición
+
+Las características del equipo de Medición a ser utilizado para el cumplimiento de la Campaña de Medición se detallan en el Anexo N°1 de la presente Base Metodológica. La Distribuidora enviará a la SIGET la base de datos que contendrá la identificación del número de serie de cada equipo, su marca, modelo y exactitud, así como la fecha de adquisición, calibración y/o ajuste que cada uno en particular haya tenido. Con una anterioridad de 10 días hábiles al comienzo de cada semestre, la Distribuidora remitirá a la SIGET la base de datos conteniendo la totalidad de los equipos que podrán ser empleados en la realización de esta campaña. Las mediciones realizadas por medio de equipos no aprobados o que no hayan sido incluidos en la base de datos remitida inicialmente, serán consideradas como no válidas por la SIGET. En el caso que la Distribuidora requiera adicionar nuevos equipos de medición, ésta podrá solicitarlo previamente, dicha solicitud deberá estar acompañada de las justificaciones respectivas. La SIGET se reserva el derecho de autorizar y aprobar dichos equipos. En caso que la Distribuidora adquiera nuevos equipos para ser utilizados en las campañas de medición; la Distribuidora deberá enviar las características técnicas de los mismos y cuando el caso lo amerite el software de lectura y su licencia de uso, e informará de éstos equipos antes del mes en que serán utilizados.
+
+---
+
+3. Implementación de Campaña de Medición
+
+La implementación de la Campaña de Medición comprenderá las siguientes etapas de acuerdo al esquema descrito a continuación: La SIGET enviará la Planilla de datos de Usuarios seleccionados, adjunta en el Anexo N° 4 de la presente metodología, con los datos de los puntos a medir. La Distribuidora deberá confirmar las mediciones al reenviar la misma planilla completando los campos dirección y fecha de colocación. Durante la instalación y retiro de los equipos de medición tanto en la medición como en la remedición, la Distribuidora completará la “Planilla de Instalación y Retiro” de acuerdo al formato definido por la SIGET, en el Anexo N° 6. En el Anexo Nº 3 se describe la forma de identificación unívoca de los puntos de medición por medio del Código SIGET y la correlativa denominación de los archivos de las mediciones.
+
+---
+
+4. Criterios para el Procesamiento de las Mediciones
+
+A los fines del procesamiento de los archivos de las mediciones de regulación de tensión se deberán considerar los siguientes criterios:
+
+- A los fines del control de la regulación de tensión, se define como TENSIÓN CARACTERÍSTICA del período:
+  - Para Suministro Monofásico Bifilar: Al valor de la tensión sobre la cual se conecta el Usuario.
+  - Para Suministros Monofásico Trifilar y Trifásicos: Al valor de tensión entre las fases en donde se registre el mayor apartamiento respecto de la tensión nominal.
+
+- Se considerarán como registros no válidos siempre que se verifique algunas de las siguientes consideraciones:
+  - Que el período de Integración de cada registro sea distinto de 15 minutos.
+  - Que los valores de tensión en cualquiera de la o las fases medidas del período resulten menores al 70% del valor nominal de la tensión en el punto de suministro.
+  - Que alguno de los valores del registro presente una incoherencia respecto al tipo de dato esperado. En esta condición se identificarán los valores de tensión o de energía con valores negativos, textos en campos numéricos, error en el formato de los campos de fechas o que el equipo de medición registre un código de anormalidad.
+  - Que la fecha del registro sea anterior a la fecha de instalación o posterior a la fecha de retiro de acuerdo a lo informado en la Planilla de Instalación y Retiro.
+
+- Se considerarán como mediciones no válidas siempre que se verifique algunas de las siguientes consideraciones:
+  - Que la cantidad de períodos válidos no supere el equivalente a 6 días de medición (576 registros). Sin embargo, el equipo deberá estar instalado al menos los 7 días.
+  - Que los datos informados en la Planilla de Instalación y Retiro no permita garantizar su adecuado procesamiento. Asimismo se verificará la correcta codificación de todos aquellos campos que se hayan establecido previamente.
+  - Que el nombre del archivo no corresponda con la codificación establecida por la SIGET.
+  - Que el equipo utilizado por la Distribuidora no corresponda con un formato de archivo informado y aprobado previamente por la SIGET.
+  - Que la medición NO haya sido observada por la SIGET o por quien esta designe, durante el transcurso de la instalación y/o el retiro, por causas imputables a la Distribuidora. Queda a opción de la SIGET presenciar la instalación y/o retiro de los mismos.
+
+- Si el equipo de medición no registra energía en cada período, se asignará la energía consumida por el usuario, obtenida del medidor de energía, durante el período de medición entre los registros válidos, de acuerdo a la curva de carga normalizada que le corresponda y que se encuentra aprobada por la SIGET.
+
+- En el proceso de asignación de la energía por intermedio de la curva de carga normalizada solo se tendrán en cuenta aquellos registros caracterizados como válidos.
+
+- Se considerará una medición fuera de tolerancia, cuando su FEBnoper individual supere el establecido en la normativa de calidad de los servicios de distribución.
+
+---
+
+5. Información a Presentar a la SIGET
+
+5.1 Información a Remitir Mensualmente
+
+La Distribuidora procesará la información registrada y la remitirá a la SIGET dentro de los primeros quince días hábiles del mes siguiente al de la medición, y con la identificación de los medios informáticos indicada en el Anexo Nº 2 de la presente base metodológica:
+
+- Un informe mensual Ejecutivo que contenga un resumen de los resultados obtenidos, observaciones y eventos ocurridos en el proceso de medición.
+- Copia de los archivos de medición sin ningún tipo de procesamiento, obtenidos al producirse el retiro del equipo o después de finalizada la medición.
+- Un informe mensual de todas las mediciones y remediciones realizadas, incluyendo los archivos ASCII con las mediciones efectuadas como así también las planillas originales correspondientes a las Planillas de Instalación y Retiro.
+
+
+- Resultados mensuales del procesamiento de todas las mediciones y remediciones efectuadas, descriptas en las Tablas Planillas_Instalacion, Datos_Procesamiento, Datos_Tension, Datos_Energia, PRECIOS_ENERGIA, Y REDES, de acuerdo al Anexo Nº 3 y descriptas en el Anexo N°5.
+- Detalle de las mediciones a realizar de acuerdo al formulario descrito en el Anexo Nº4.
+
+5.2 Información a Remitir Semestralmente
+
+Con el objeto de seleccionar los puntos de medición para el cumplimiento de la campaña de medición, las empresas deberán enviar la tabla DATOS_USUARIOS completa con todos los usuarios activos al momento de la extracción, durante los primeros 15 días hábiles de los meses de abril y octubre. La denominación y formato de esta tabla se deberá ajustar a lo establecido en el Anexo 5, ENVIOS SEMESTRALES. La Distribuidora procesará la información registrada y remitirá a la SIGET los primeros 15 días hábiles del mes siguiente al de cierre de cada semestre de control:
+
+- Un informe Ejecutivo que contenga un resumen de los resultados obtenidos y de las acciones a tomar en los casos de transgresiones a los límites.
+- Un informe semestral con el resultado de los Indicadores Globales semestrales para cada uno de los tipos de usuarios considerados, que reflejen el comportamiento del Servicio Eléctrico de Distribución en los últimos doce meses.
+- Archivo informático de las Tablas indicadas en el Anexo Nº5, de manera de permitir su importación en base de datos para su procesamiento por parte de la SIGET.
+
+5.3 Informe de la Calidad de Servicio y Suministro
+
+Se deberá incluir un resumen ejecutivo de la evolución de los indicadores en cada etapa para aquellos usuarios de las áreas de densidad de carga alta y baja de cada empresa Distribuidora. La Información Semestral deberá ser remitida los primeros 15 días hábiles del mes siguiente al de finalización del período de control. Esta información deberá ser presentado en forma escrita y en medio magnético. Las empresas Distribuidoras deberán incluir en el referido informe el resumen de la evolución de los indicadores de cada mes y los promedios correspondientes a los referidos semestres.
+
+---
+
+6. Anexos
+
+Anexo 1: Características del Equipo de Medición
+
+En este anexo se describen los requerimientos que deberán cumplir los equipos a emplear por las empresas Distribuidoras para la realización de las mediciones correspondientes a las Campañas de Control de la Regulación de Tensión previstas en las Normas de Calidad de Servicio de los Sistemas de Distribución.
+
+1.1 Características Generales
+
+La variable a medir será el valor eficaz verdadero (con Armónicas incluidas) de la tensión en las tres fases en el caso de conexiones trifásicas, en las dos fases en el caso de una monofásica trifilar y solo si la instalación elegida para medir es monofásica bifilar, se medirá esa sola fase. El rango de medición de los valores de tensión a medir estará centrado en las tensiones nominales de servicio, con un rango de +30% y –30%. La exactitud del sistema de medición de la tensión será la definida por la Clase 0,5 según norma IEC o equivalente. La medición será permanente y con un seguimiento de la regulación de tensión a través de una constante de tiempo del orden de 30 segundos a 1 minuto. De esta forma se evitará medir perturbaciones, al filtrarse las frecuencias más altas. En lo que respecta al registro, la información de la medición será registrada por un lapso de 7 días como mínimo, sin realizar descargas intermedias. Para realizar el registro de la medición durante el lapso de 7 días, se deberán promediar las mediciones obtenidas en intervalos de 15 minutos. Se podrán registrar adicionalmente los desvíos ocurridos dentro del intervalo de 15 minutos, pudiendo ser expresados a través de: 2 veces el sigma estadístico, o alternativamente, por un VMáx95% que no sea superado por un 5% de las muestras y por un VMín5% que sea superado por un 95% de las muestras tomadas en el intervalo. Conjuntamente con la medición de la/s tensión/es se podrá medir la energía/potencia activa consumida en el punto de medición, integrada en períodos de 15 minutos sincronizado/s con el/las de la/las tensión/es. La exactitud de la medición de la energía/potencia del equipo registrador deberá cumplir con las siguientes especificaciones: un valor máximo de 0.5% en la tensión y un valor menor al 2% para la medición de la energía incluyendo accesorios. Los valores de exactitud de los equipos de medición, deberán ser certificados por el fabricante, o por laboratorios Internacionales o Nacionales reconocidos y aprobados por la SIGET, dichos valores de exactitud podrán ser revisados cuando la SIGET lo requiera.
+
+Las condiciones ambientales en que deberán funcionar los equipos de medición y registro serán como mínimo las siguientes:
+
+- Rango de temperatura de operación: -5 ºC a +50 ºC.
+- Rango de humedad de operación: 40% a 95%.
+- Rango de presiones barométricas: 860 mbar a 1080 mbar.
+
+El equipo de medición (o su software de procesamiento) deberá permitir que el resultado de la medición semanal sea almacenable en archivos de texto plano para su posterior procesamiento por parte de la SIGET. El formato del archivo de salida de la medición deberá ser remitido a la SIGET para su aprobación, con una antelación de por lo menos tres meses a la fecha de implementación, de manera de que esta última pueda adecuar sus sistemas informáticos de procesamiento con la adecuada anticipación. Una vez aprobados los formatos de salida de los archivos de la medición, estos no podrán ser modificados por la Distribuidora, bajo apercibimiento de considerar las mediciones realizadas con estos equipos como fallidas. Esto incluye los casos en los cuales se proceda a la compra de equipos de medición similares a los que dieran origen a la primera aprobación del formato, pero que poseen incluso pequeñas diferencias en el formato de salida. Idénticas consideraciones son aplicables en el caso que se proceda a una actualización del software de lectura de las mediciones, tales que estas ocasionen cambios en los formatos de salida. La SIGET podrá aceptar que la Distribuidora envíe las mediciones en formato binario tal cual son extraídas del equipo de registro, solo si el software de lectura y su licencia de uso es remitida con antelación a la SIGET. El software deberá preferentemente permitir un procesamiento por lotes de los archivos binarios de las mediciones. A partir de las mediciones realizadas en la Campaña de Regulación de Tensión, se realiza la Campaña previa de perturbaciones, con el objetivo de determinar las ubicaciones óptimas de los equipos a utilizar en la Campaña de Distorsión Armónica y Flicker. La campaña previa de perturbaciones estará realizada con los mismos equipos que los empleados en la Campaña de Regulación de Tensión, y en sus mismos puntos de medición. Para esto, los equipos empleados en la Campaña de Regulación de Tensión deberán medir y registrar al menos las siguientes variables:
+
+Tasa Distorsión Armónica Total (TDT)
+
+Con inclusión de las tensiones armónicas pares e impares hasta la de orden 15°.
+
+- Resolución de la indicación de la TDT: 0,25%
+- Exactitud de la indicación de la TDT: 0,5%
+- Indicación de la TDT: 10% fondo de escala
+- Intervalo de captación: 15 minutos
+- Forma de indicación: Valor medio de un mínimo de 15 mediciones en el período de 15 minutos
+
+Fluctuaciones Rápidas de Tensión (Flicker)
+
+- Fluctuación de la tensión en frecuencias desde 1Hz a 30 Hz. Máxima sensibilidad en 8 Hz (f0)
+- Umbral de detección ΔV / V : 0,2% en f0
+- Exactitud en la determinación de la ΔV / V : 0,5%
+- Indicación de ΔV / V a fondo de escala : 0,2%
+- Intervalo de captación: 15 minutos
+- Forma de indicación: Valor medio de un mínimo de 15 mediciones en el período de 15 minutos
+
+1.2 Ensayos
+
+Los diferentes modelos de equipos de medición y registro a utilizar en la Campaña de Regulación de Tensión, deberán contar con protocolos de ensayos de tipo realizados por laboratorios Nacionales o Internacionales reconocidos y aprobados por la SIGET. Se indicarán en cada caso bajo qué normas están construidos los equipos. Los ensayos de tipo exigidos serán:
+
+- Ensayos de Aislación.
+  - Rigidez dieléctrica
+    - Frecuencia industrial
+    - Impulso
+  - Compatibilidad electromagnética
+    - Interferencias del ruido de alta frecuencia.
+  - Ensayos Climáticos.
+  - Ensayos mecánicos.
+
+Previo a la instalación de los equipos por primera vez, se realizarán sobre cada uno de ellos los ensayos de contraste y funcionamiento que indique el fabricante y/o la SIGET, los cuales deberán repetirse a solicitud de la SIGET. Deberá notificarse a la SIGET fehacientemente con 10 días hábiles de anticipación el lugar, fecha y hora
+
+ de realización de estos ensayos a fin de asistir a los mismos.
+
+---
+
+Anexo 2: Identificación de los Medios Informáticos
+
+Los medios informáticos (diskettes, disco compacto, etc.) a utilizar en el envío de información referida a las mediciones correspondientes a la Campaña de Control de la Regulación de Tensión, se deberán identificar con un rótulo que contenga la siguiente información: En la parte superior derecha deberá figurar en letras de aproximadamente 1 cm de altura el Código “R”, el cual indicará que se trata de una entrega referente a la Campaña de Regulación de Tensión. A continuación se indicará:
+
+- Nombre de la Distribuidora
+- Reporte de: Regulación de Tensión
+- Mes y Año/Semestre Reportado
+- Fecha de Entrega
+
+El resto de la etiqueta se utilizará para realizar una descripción completa de la información que contiene, indicando la información reportada y el tipo de archivo.
+
+---
+
+Anexo 3: Formación del Nº SIGET y Denominación de los Archivos de las Mediciones de Regulación de Tensión
+
+La siguiente codificación identifica cada una de las mediciones en forma unívoca, por medio de once caracteres, de acuerdo al formato siguiente:
+
+1 2 3 4 5 6 7 8 9 10 11
+
+Posición | Descripción | Código
+- 1 | Una Letra según la empresa Distribuidora:  
+  - CAESS | A
+  - CLESA | B
+  - DELSUR | C
+  - DEUSEM | D
+  - EEO | E
+  - EDESAL | F
+  - B&D, Servicios Técnicos | G
+  - ABRUZZO | H
+- 2 | Campaña de Regulación de Tensión | R
+- 3 | 1º Medición | 1
+  - 2º Medición (1º Remedición) | 2
+  - 3º Medición (2º Remedición), etc. | 3, ...
+- 4 | Mes de Realización de la Medición
+  - Un dígito numérico para los meses de Enero a Septiembre | 1-9
+  - Octubre | O
+  - Noviembre | N
+  - Diciembre | D
+- 5, 6, 7 y 8 | Cuatro dígitos del año | 2013, 2014, …, 2015, etc.
+- 9, 10 y 11 | Tres dígitos para identificar la medición, en cada mes | 001-999
+
+Ejemplo: AR182015026.xxx
+
+Dónde:
+- A: Distribuidora CAESS
+- R: Campaña de Regulación de Tensión
+- 1: Primera medición en el punto de suministro
+- 8: Medición realizada en el mes de Agosto
+- 2015: Medición realizada en el año 2015
+- 026: 26º medición realizada durante el mes
+
+El nombre del archivo de la medición deberá estar conformado por el Nº SIGET y su extensión.
+
+---
+
+Anexo 4: Modelo de Datos a Enviar a la Distribuidora
+
+---
+
+Anexo 5: Modelo de Datos para el Envío de Información
+
+Envíos Mensuales
+
+La Distribuidora deberá remitir mensualmente los archivos informáticos organizados en tablas en formato ASCII, que deberán estar denominados con la siguiente codificación, la cual permitirá su identificación en forma unívoca de acuerdo al siguiente formato:
+
+1 2 3 4 5 6 7_NOMBRETABLA.xxx
+
+Dígito 1 | Código de identificación de la frecuencia de envío de la información
+- M: para identificar que la tabla es información remitida en forma mensual.
+
+Dígito 2 | Identificación de la Distribuidora
+- A: CAESS
+- B: CLESA
+- C: DELSUR
+- D: DEUSEM
+- E: EEO
+- F: EDESAL
+- G: B&D, Servicios Técnicos
+- H: ABRUZZO
+
+Dígito 3 | Código de identificación de la Campaña
+- R: Regulación de Tensión
+
+Dígito 4 | Código de identificación de las mediciones
+- D: identifica la Información enviada por la Distribuidora con los Resultados Mensuales.
+
+Dígito 5 y 6 | Código de identificación del Año de envío
+- Dos últimos Dígitos del Año
+
+Dígito 7 | Código de identificación del Mes de Envío
+- El mes en Formato utilizando del 1 al 9, O, N, D.
+
+---
+
+Nombre de la Tabla | Descripción del Contenido
+- PLANILLA_INSTALACION | Datos Planilla Instalación / Retiro
+- DATOS_PROCESAMIENTO | Datos Procesamiento Medición
+- PRECIOS_ENERGIA | Datos para procesamiento Precios de Energía
+- REDES | Identificación de la red del punto de medición
+- DATOS_TENSION | Datos para Procesamiento Tensión
+- DATOS_ENERGIA | Datos para Procesamiento Energía
+
+Los campos de los registros informados en dichas tablas deberán estar delimitados por el separador de campo PIPE (|). Asimismo, como final de línea se debe utilizar CrLf (ASCII 13 + ASCII 10). Se deben informar la totalidad de los campos, aunque algunos de ellos no contenga dato, en cuyo caso quedarán vacíos y respetando el orden establecido en las tablas descritas. A los fines de uniformizar los formatos: fecha y fecha + hora, los mismos deberán ser presentadas en el formato: dd/mm/aaaa; dd/mm/aa hh:mm. Ejemplo: fecha 27/08/2005; fecha + hora 27/08/2005 13:08. El campo decimal será informado con tres decimales, mientras que los campos de texto no podrán informarse con delimitadores propios, comillas dobles (“) o simples (‘).
+
+---
+
+Tabla: Planilla_Instalacion
+
+Campo | Descripción | Tipo
+- NombreArchivo | Número de identificación unívoco SIGET (Ver Anexo N°3 ) | Texto (8)
+- Tarifa | Tipo de Tarifa asignada al Usuario | Texto (5)
+- TensionServicio | Tensión Nominal de Servicio [en Volts] | Entero
+- Instalaciones | Tipo instalación ( M = Monofásico, B = Bifásico, T = Trifásico) | Texto (1)
+- TipoUsuario | Densidad de carga alta (U), Densidad de carga baja (R), Aislado (A) | Texto (1)
+- CodigoMedidor | Código que Identifica al Medidor Comercial de la Energía | Texto (15)
+- EnergiaInicial | Lectura Inicial del Medidor Comercial de Energía | Decimal
+- EnergiaFinal | Lectura final del Medidor Comercial de Energía | Decimal
+- NumeroContador | Código que identifica al Equipo Registrador de Calidad | Texto (10)
+- FechaColocacion | Fecha y Hora de la Colocación del Equipo de Registro | Fecha y Hora
+- FechaRetiro | Fecha y Hora del Retiro del Equipo de Registro | Fecha y Hora
+- Observacion | Observaciones en la Colocación y/o Retiro | Texto (250)
+- MedicionEnergia | Se indica si se realiza la medición (1), o se emplea una curva de carga (0) | Entero
+
+La tarifa del usuario deberá indicarse de acuerdo a la siguiente codificación:
+
+Tarifa | Descripción
+- 109 | Tarifa simple para Usuarios conectados en baja tensión, pequeña demanda residencial con consumo menor o igual a 99 kWh.
+- 110 | Tarifa simple para Usuarios conectados en baja tensión, pequeña demanda residencial con consumo mayor que 99 kWh y menor o igual a 200 kWh.
+- 111 | Tarifa simple para Usuarios conectados en baja tensión, pequeña demanda residencial con consumo mayor de 200 kWh.
+- 112 | Tarifa simple para Usuarios conectados en baja tensión, pequeña demanda uso general.
+- 113 | Tarifa de Alumbrado Público.
+- 121 | Tarifa simple para Usuarios conectados en baja tensión, mediana demanda sin medición de potencia.
+- 122 | Tarifa simple para Usuarios conectados en baja tensión, mediana demanda con medición de potencia.
+- 123 | Tarifa simple para Usuarios conectados en baja tensión, mediana demanda con medidor horario.
+- 131 | Tarifa simple para Usuarios conectados en baja tensión, grandes demandas con medidor horario.
+- 132 | Tarifa simple para Usuarios conectados en baja tensión, grandes demandas con medidor electromecánico.
+- 211 | Tarifa para Usuarios conectados en medianas demandas en MT, sin medidor de potencia.
+- 212 | Tarifa para Usuarios conectados en medianas demandas en MT, con medidor de potencia.
+- 213 | Tarifa para Usuarios conectados en medianas demandas en MT, con medidor horario.
+- 221 | Tarifa para Usuarios conectados en grandes demandas en MT, con medidor horario.
+- 222 | Tarifa para Usuarios conectados en grandes demandas en MT, con medidor electromecánico.
+
+Nota: Para el caso de que la distribuidora aplique tarifas especiales no reguladas, con diferente denominación, SP1, 2, 3, 4 según sea el caso, la Distribuidora deberá adaptar dichas tarifas a las tarifas codificadas en la
+
+ tabla anterior.
+
+---
+
+Tabla: Datos_Procesamiento (de todas las mediciones)
+
+Campo | Descripción | Tipo
+- NombreArchivo | Número de identificación unívoco SIGET ( Ver Anexo N°3 ) | Texto (8)
+- TensionServicio | Tensión Nominal de Servicio del Usuario | Entero
+- TipoUsuario | Densidad de carga alta (U), Densidad de carga baja (R), Aislado (A) | Texto (1)
+- Estado | Status del resultado del procesamiento del archivo de la medición de acuerdo a la codificación establecida. | Texto (3)
+- FechaInicio | Fecha y hora Inicio medición | Fecha y Hora
+- FechaFinal | Fecha y hora final de medición | Fecha y Hora
+- Energia | Energía consumida durante el período de Medición | Decimal
+- CurvaCarga | Código identificación Curva de Carga empleada en el procesamiento | Texto (5)
+- RegistrosTotales | Cantidad de Registros Totales de 15 minutos de la medición | Entero
+- RegistrosValidos | Cantidad Total de Registros Válidos de 15 minutos de la medición | Entero
+- RegistrosFT | Total de registros válidos fuera de las Tolerancias Establecidas | Entero
+- EnergiaFT | Energía Total fuera de las Tolerancias Establecidas. | Decimal
+- CompIndividual | Monto en dólares de la compensación calculada para la medición realizada por excederse de los Limites Individuales. | Decimal
+
+Estado | Descripción
+- 000 | Archivos en los cuales NO se han detectado problemas en su procesamiento
+- 002 | Archivos en los cuales la cantidad de períodos válidos de 15 minutos es menor a 576 (6 días)
+- 004 | Archivos que no pudieron ser extraídos del equipo de medición.
+- 006 | Archivos en los que se verifican errores de datos por mal funcionamiento del equipo de medición o inconvenientes informáticos, que impiden su procesamiento.
+
+---
+
+Tabla: Precios_Energia (Precios por Tarifa para el cálculo de las compensaciones)
+
+Campo | Descripción | Tipo
+- Tarifa | Tipo de Tarifa asignada al usuario o empresa según corresponda (*) | Texto (5)
+- PrecioEnergia | Precio de la energía de acuerdo al tipo de Tarifa asignada al Usuario | Decimal
+
+Nota: (*)
+El cargo de energía ponderado para toda la Empresa se informará en el campo “PrecioEnergía” con el código “GLOBAL” en el campo Tarifa y este corresponderá al precio promedio ponderado de los doce meses anteriores al mes de entrega de la tabla. Cuando la tarifa incorpore medición horaria se informará en el campo “PrecioEnergía” el cargo de energía ponderado. En los meses que exista cambio de tarifa, se utilizará una tarifa ponderada en base a los días en los cuales ha estado vigente cada una de las tarifas (tarifa1* (# días vigente en el mes/total de días del mes) + tarifa 2* (# días vigente en el mes/total de días del mes)).
+
+---
+
+Tabla: Redes (Identificación de la red del punto de medición)
+
+Campo | Descripción | Tipo
+- NombreArchivo | Número de identificación unívoco de SIGET correspondiente al nombre de la medición realizada | Texto (8)
+- IDUsuario | Número de Identificación del usuario conectado al transformador | Texto (30)
+- Tipo | Clasificación del servicio de acuerdo a la posición respecto al transformador de alimentación (A, B, o C) | Texto (1)
+- CentroMTBT | N° de Centro MT/BT | Texto (20)
+
+Tipo | Descripción
+- A | Servicio ubicado más cercano al transformador que el punto de medición
+- B | Servicio ubicado más lejano al transformador que el punto de medición
+- C | Servicio no identificado de acuerdo a los conceptos A y B
+
+---
+
+Tabla: Datos_Tension (Valores de Tensión para el procesamiento de los Indicadores Globales)
+
+Campo | Descripción | Tipo
+- NombreArchivo | Número de identificación unívoco SIGET ( Ver Anexo N°3 ) | Texto (8)
+- NRG_Tot | Número de Registros Válidos Totales de 15 minutos | Entero
+- NRG_23p | Número de Registros Válidos para Apartamiento > 22% | Entero
+- NRG_22p | Número de Registros Válidos para 22% ≤ Apartamiento > 21% | Entero
+- NRG_21p | Número de Registros Válidos para 21% ≤ Apartamiento > 20% | Entero
+- NRG_20p | Número de Registros Válidos para 20% ≤ Apartamiento > 19% | Entero
+- NRG_19p | Número de Registros Válidos para 19% ≤ Apartamiento > 18% | Entero
+- NRG_18p | Número de Registros Válidos para 18% ≤ Apartamiento > 17% | Entero
+- NRG_17p | Número de Registros Válidos para 17% ≤ Apartamiento > 16% | Entero
+- NRG_16p | Número de Registros Válidos para 16% ≤ Apartamiento > 15% | Entero
+- NRG_15p | Número de Registros Válidos para 15% ≤ Apartamiento > 14% | Entero
+- NRG_14p | Número de Registros Válidos para 14% ≤ Apartamiento > 13% | Entero
+- NRG_13p | Número de Registros Válidos para 13% ≤ Apartamiento > 12% | Entero
+- NRG_12p | Número de Registros Válidos para 12% ≤ Apartamiento > 11% | Entero
+- NRG_11p | Número de Registros Válidos para 11% ≤ Apartamiento > 10% | Entero
+- NRG_10p | Número de Registros Válidos para 10% ≤ Apartamiento > 9% | Entero
+- NRG_9p | Número de Registros Válidos para 9% ≤ Apartamiento > 8% | Entero
+- NRG_8p | Número de Registros Válidos para 8% ≤ Apartamiento > 7% | Entero
+- NRG_7p | Número de Registros Válidos para 7% ≤ Apartamiento > 6% | Entero
+- NRG_6p | Número de Registros Válidos para 6% ≤ Apartamiento > 5% | Entero
+- NRG_5p | Número de Registros Válidos para 5% ≤ Apartamiento > 4% | Entero
+- NRG_4p | Número de Registros Válidos para 4% ≤ Apartamiento > 3% | Entero
+- NRG_3p | Número de Registros Válidos para 3% ≤ Apartamiento > 2% | Entero
+- NRG_2p | Número de Registros Válidos para 2% ≤ Apartamiento > 1% | Entero
+- NRG_1p | Número de Registros Válidos para 1% ≤ Apartamiento > 0% | Entero
+- NRG_0 | Número de Registros Válidos para 0% ≤ Apartamiento ≥ -1% | Entero
+- NRG_1n | Número de Registros Válidos para –1% > Apartamiento ≥ -2% | Entero
+- NRG_2n | Número de Registros Válidos para –2% > Apartamiento ≥ -3% | Entero
+- NRG_3n | Número de Registros Válidos para –3% > Apartamiento ≥ -4% | Entero
+- NRG_4n | Número de Registros Válidos para –4% > Apartamiento ≥ -5% | Entero
+- NRG_5n | Número de Registros Válidos para –5% > Apartamiento ≥ -6% | Entero
+- NRG_6n | Número de Registros Válidos para –6% > Apartamiento ≥ -7% | Entero
+- NRG_7n | Número de Registros Válidos para –7% > Apartamiento ≥ -8% | Entero
+- NRG_8n | Número de Registros Válidos para –8% > Apartamiento ≥ -9% | Entero
+- NRG_9n | Número de Registros Válidos para –9% > Apartamiento ≥ -10% | Entero
+- NRG_10n | Número de Registros Válidos para –10% > Apartamiento ≥ -11% | Entero
+- NRG_11n | Número de Registros Válidos para –11% > Apartamiento ≥ -12% | Entero
+- NRG_12n | Número de Registros Válidos para –12% > Apartamiento ≥ -13% | Entero
+- NRG_13n | Número de Registros Válidos para –13% > Apartamiento ≥ -14% | Entero
+- NRG_14n | Número de Registros Válidos para –14% > Apartamiento ≥ -15% | Entero
+- NRG_15n | Número de Registros Válidos
+
+ para –15% > Apartamiento ≥ -16% | Entero
+- NRG_16n | Número de Registros Válidos para –16% > Apartamiento ≥ -17% | Entero
+- NRG_17n | Número de Registros Válidos para –17% > Apartamiento ≥ -18% | Entero
+- NRG_18n | Número de Registros Válidos para –18% > Apartamiento ≥ -19% | Entero
+- NRG_19n | Número de Registros Válidos para –19% > Apartamiento ≥ -20% | Entero
+- NRG_20n | Número de Registros Válidos para –20% > Apartamiento ≥ -21% | Entero
+- NRG_21n | Número de Registros Válidos para –21% > Apartamiento ≥ -22% | Entero
+- NRG_22n | Número de Registros Válidos para –22% > Apartamiento | Entero
+
+Dónde:  
+Apartamiento = (UMEDIDA-UNOMINAL)/UNOMINAL
+
+---
+
+Tabla: Datos_Energia (Valores de Energía para el procesamiento de los Indicadores Globales)
+
+Campo | Descripción | Tipo
+- NombreArchivo | Número de identificación unívoco SIGET (Ver Anexo N°3) | Texto (8)
+- ENG_Tot | Energía Total Registrada en el período de medición [en kWh] | Decimal
+- ENG_23p | Energía Registrada en la Medición para Apartamiento > 22% | Decimal
+- ENG_22p | Energía Registrada en la Medición para 22% ≤ Apartamiento > 21% | Decimal
+- ENG_21p | Energía Registrada en la Medición para 21% ≤ Apartamiento > 20% | Decimal
+- ENG_20p | Energía Registrada en la Medición para 20% ≤ Apartamiento > 19% | Decimal
+- ENG_19p | Energía Registrada en la Medición para 19% ≤ Apartamiento > 18% | Decimal
+- ENG_18p | Energía Registrada en la Medición para 18% ≤ Apartamiento > 17% | Decimal
+- ENG_17p | Energía Registrada en la Medición para 17% ≤ Apartamiento > 16% | Decimal
+- ENG_16p | Energía Registrada en la Medición para 16% ≤ Apartamiento > 15% | Decimal
+- ENG_15p | Energía Registrada en la Medición para 15% ≤ Apartamiento > 14% | Decimal
+- ENG_14p | Energía Registrada en la Medición para 14% ≤ Apartamiento > 13% | Decimal
+- ENG_13p | Energía Registrada en la Medición para 13% ≤ Apartamiento > 12% | Decimal
+- ENG_12p | Energía Registrada en la Medición para 12% ≤ Apartamiento > 11% | Decimal
+- ENG_11p | Energía Registrada en la Medición para 11% ≤ Apartamiento > 10% | Decimal
+- ENG_10p | Energía Registrada en la Medición para 10% ≤ Apartamiento > 9% | Decimal
+- ENG_9p | Energía Registrada en la Medición para 9% ≤ Apartamiento > 8% | Decimal
+- ENG_8p | Energía Registrada en la Medición para 8% ≤ Apartamiento > 7% | Decimal
+- ENG_7p | Energía Registrada en la Medición para 7% ≤ Apartamiento > 6% | Decimal
+- ENG_6p | Energía Registrada en la Medición para 6% ≤ Apartamiento > 5% | Decimal
+- ENG_5p | Energía Registrada en la Medición para 5% ≤ Apartamiento > 4% | Decimal
+- ENG_4p | Energía Registrada en la Medición para 4% ≤ Apartamiento > 3% | Decimal
+- ENG_3p | Energía Registrada en la Medición para 3% ≤ Apartamiento > 2% | Decimal
+- ENG_2p | Energía Registrada en la Medición para 2% ≤ Apartamiento > 1% | Decimal
+- ENG_1p | Energía Registrada en la Medición para 1% ≤ Apartamiento > 0% | Decimal
+- ENG_0 | Energía Registrada en la Medición para 0% ≤ Apartamiento ≥ -1% | Decimal
+- ENG_1n | Energía Registrada en la Medición para –1% > Apartamiento ≥-2% | Decimal
+- ENG_2n | Energía Registrada en la Medición para –2% > Apartamiento ≥-3% | Decimal
+- ENG_3n | Energía Registrada en la Medición para –3% > Apartamiento ≥-4% | Decimal
+- ENG_4n | Energía Registrada en la Medición para –4% > Apartamiento ≥-5% | Decimal
+- ENG_5n | Energía Registrada en la Medición para –5% > Apartamiento ≥-6% | Decimal
+- ENG_6n | Energía Registrada en la Medición para –6% > Apartamiento ≥-7% | Decimal
+- ENG_7n | Energía Registrada en la Medición para –7% > Apartamiento ≥-8% | Decimal
+- ENG_8n | Energía Registrada en la Medición para –8% ≤ Apartamiento ≥-9% | Decimal
+- ENG_9n | Energía Registrada en la Medición para –9% > Apartamiento ≥-10% | Decimal
+- ENG_10n | Energía Registrada en la Medición para –10% > Apartamiento ≥-11% | Decimal
+- ENG_11n | Energía Registrada en la Medición para –11% > Apartamiento ≥-12% | Decimal
+- ENG_12n | Energía Registrada en la Medición para –12% > Apartamiento ≥-13% | Decimal
+- ENG_13n | Energía Registrada en la Medición para –13% > Apartamiento ≥-14% | Decimal
+- ENG_14n | Energía Registrada en la Medición para –14% > Apartamiento ≥-15% | Decimal
+- ENG_15n | Energía Registrada en la Medición para –15% > Apartamiento ≥-16% | Decimal
+- ENG_16n | Energía Registrada en la Medición para –16% > Apartamiento ≥-17% | Decimal
+- ENG_17n | Energía Registrada en la Medición para –17% > Apartamiento ≥-18% | Decimal
+- ENG_18n | Energía Registrada en la Medición para –18% > Apartamiento ≥-19% | Decimal
+- ENG_19n | Energía Registrada en la Medición para –19% > Apartamiento ≥-20% | Decimal
+- ENG_20n | Energía Registrada en la Medición para –20% > Apartamiento ≥-21% | Decimal
+- ENG_21n | Energía Registrada en la Medición para –21% > Apartamiento ≥-22% | Decimal
+- ENG_22n | Energía Registrada en la Medición para –22% > Apartamiento | Decimal
+
+Dónde:  
+Apartamiento = (UMEDIDA-UNOMINAL)/UNOMINAL
+
+---
+
+Envíos Semestrales
+
+El distribuidor deberá remitir semestralmente los archivos informáticos organizados en tablas en formato ASCII, que deberán estar denominados con la siguiente codificación, la cual permitirá su identificación en forma unívoca de acuerdo al siguiente formato:
+
+1 2 3 4 5 6 7.NOMBRETABLA.xxx
+
+Dígito 1 | Código de identificación de la frecuencia de envío de la información
+- S: para identificar que la tabla es información remitida en forma semestral.
+
+Dígito 2 | Identificación de la Distribuidora
+- A: CAESS
+- B: CLESA
+- C: DELSUR
+- D: DEUSEM
+- E: EEO
+- F: EDESAL
+- G: B&D, Servicios Técnicos
+- H: ABRUZZO
+
+Dígito 3 | Código de identificación de la Campaña
+- R: Regulación de Tensión
+
+Dígito 4 | Código de identificación de las Remediciones
+- D: identifica la Información enviada por la Distribuidora con los Resultados Semestrales
+
+Dígito 5 y 6 | Código de identificación del Año de envío
+- Dos últimos Dígitos del Año
+
+Dígito 7 | Código de identificación del Mes de Envío
+- El mes en Formato utilizando del 1 al 9, O, N, D.
+
+---
+
+Nombre de la Tabla | Descripción del Contenido
+- INDICADORES_GLOBALES | Datos de los indicadores globales de producto técnico
+- DATOS_USUARIOS | Datos de todos los usuarios
+
+Los campos de los registros informados en dichas tablas deberán estar delimitados por el separador de campo PIPE (|). Asimismo como final de línea se debe utilizar CrLf. Se deben informar la totalidad de los campos, aunque algunos de ellos no contenga dato, en cuyo caso quedarán vacíos y respetando el orden establecido en las tablas descritas.
+
+ Los formatos de fecha y hora sí deberán uniformizar de la siguiente manera:  
+a) fecha   dd/mm/aaaa Ejemplo: fecha 27/08/2005  
+b) fecha + hora,  dd/mm/aa hh:mm  Ejemplo: fecha + hora 27/08/2005 13:08  
+El campo decimal será informado con dos decimales.
+
+---
+
+Tabla: Indicadores_Globales (Indicadores Globales en el semestre)
+
+Campo | Descripción | Tipo
+- FEBnoper | Frecuencia Equivalente fuera de las tolerancias permitidas [en %] | Decimal
+- FECCnoper | Sumatoria de las Frecuencias equivalentes por energía consumida para las bandas no permitidas | Decimal
+- Ntrgper | N° total de registros dentro de las tolerancias establecidas | Entero
+- NRgtot | Cantidad total de registros válidos | Entero
+- CompGlobal | Monto Total en dólares de la compensación calculada para la medición realizada por excederse de los Limites Globales. | Decimal
+
+---
+
+Tabla: Datos_Usuarios (Datos de los Usuarios de la Distribuidora)
+
+Campo | Descripción | Tipo
+- IDUsuario | Identificación única del usuario (identificador, Nº de cuenta, etc. según corresponda) | Texto (30)
+- Tarifa | Tarifa correspondiente al usuario | Texto (5)
+- TipoRegistro | Indica si es un registro dado de alta, de baja o si tiene modificación en alguno de sus campos (A=Alta, B=Baja, M=Modificación) | Texto (1)
+- TensionServicio | Tensión Nominal de Servicio del Usuario | Entero
+- AreaGeografica | Densidad Alta (A) / Media (M) / Baja (B) | Texto (1)
+- TipoServicio | Densidad de carga alta (U) / Densidad de carga baja (R) | Texto (1)
+- TipoInstalacion | Monofásica (M) / Trifásica (T) | Texto (1)
+- Subestación | Subestación AT/MT o Nº de transformador desde donde se alimenta al usuario | Texto (50)
+- Circuito | Nº de circuito MT desde donde se alimenta al usuario para división red normal | Texto (50)
+- CenMTBT | Nº de centro MT/BT desde donde se alimenta al usuario en BT para división red normal. | Texto (20)
+- IDMedidor | Identificación de medidor | Texto (25)
+- TipoMedidor | Código de Identificación del tipo de medidor (nos deben enviar los tipos) | Texto (30)
+- FechaColocacion | Fecha de colocación de medidor | Fecha
+- Nombre | Nombre del usuario | Texto (50)
+- Calle | Calle | Texto (60)
+- NumeroVivienda | Número | Texto (10)
+- Piso | Piso | Texto (10)
+- Unidad | Unidad/Apartamento | Texto (5)
+- Telefono | Teléfono | Texto (10)
+- Departamento | Departamento | Texto (50)
+- Municipio | Municipio | Texto (50)
+- Colonia | Colonia o Cantón | Texto (50)
+- Potencia | Potencia facturada | Decimal
+- CoordenadaX | CoordenadaX (Sistema Universal Transverse Mercator – UTM-) de la posición del Usuario | Decimal
+- CoordenadaY | CoordenadaY (Sistema Universal Transverse Mercator – UTM-) de la posición del Usuario | Decimal
+
+Nota:
+Debe tenerse en cuenta que en el campo “TipoRegistro” debe figurar la letra “A”. En los campos “Departamento” y “Municipio” los correspondientes nombres deberán ser expresados en letras mayúsculas, sin acentos, ni abreviaturas, ni símbolos ajenos al alfabeto español, no se deberán utilizar las palabras “DEPARTAMENTO” o “MUNICIPIO”, ni espacios al inicio o al final de los nombres, y para el caso de nombres compuestos por dos o más palabras se deberá utilizar exactamente un espacio como separador de palabras.
+
+La tarifa del usuario deberá indicarse de acuerdo a la siguiente codificación:
+
+Tarifa | Descripción
+- 109 | Tarifa simple para Usuarios conectados en baja tensión, pequeña demanda residencial con consumo menor o igual a 99 kWh.
+- 110 | Tarifa simple para Usuarios conectados en baja tensión, pequeña demanda residencial con consumo menor o igual a 200 kWh.
+- 111 | Tarifa simple para Usuarios conectados en baja tensión, pequeña demanda residencial con consumo mayor de 200 kWh.
+- 112 | Tarifa simple para Usuarios conectados en baja tensión, pequeña demanda uso general.
+- 121 | Tarifa simple para Usuarios conectados en baja tensión, mediana demanda sin medición de potencia.
+- 122 | Tarifa simple para Usuarios conectados en baja tensión, mediana demanda con medición de potencia.
+- 123 | Tarifa simple para Usuarios conectados en baja tensión, mediana demanda con medidor horario.
+- 131 | Tarifa simple para Usuarios conectados en baja tensión, grandes demandas con medidor horario.
+- 132 | Tarifa simple para Usuarios conectados en baja tensión, grandes demandas con medidor electromecánico.
+- 211 | Tarifa para Usuarios conectados en medianas demandas en MT, sin medidor de potencia.
+- 212 | Tarifa para Usuarios conectados en medianas demandas en MT, con medidor de potencia.
+- 213 | Tarifa para Usuarios conectados en medianas demandas en MT, con medidor horario.
+- 221 | Tarifa para Usuarios conectados en grandes demandas en MT, con medidor horario.
+- 222 | Tarifa para Usuarios conectados en grandes demandas en MT, con medidor electromecánico.
+
+Nota: Para el caso de que la distribuidora aplique tarifas especiales no reguladas, con diferente denominación, SP1, 2, 3, 4 según sea el caso, la Distribuidora deberá adaptar dichas tarifas a las tarifas codificadas en la tabla anterior.
+
+---
+
+Anexo 6: Planilla de Instalación y Retiro
+
+---
+
+Anexo 7: Equipos Autorizados por la SIGET para el Control de la Calidad
+
+---
+
+Tabla de los Equipos de Medición Autorizados por la SIGET para el Control de la Calidad de Servicio Técnico y Producto
+
+Distribuidora:
+
+Item | Número de Serie del Equipo | Marca | Modelo | Exactitud del Equipo | Fecha de Adquisición | Fecha de Calibración
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+
+---
+
+Esto completa la transcripción del documento PDF proporcionado. Si necesitas más detalles o algún formato específico, no dudes en indicármelo.

@@ -1,0 +1,118 @@
+/* styles/Chat.module.css */
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 0vh;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.chatBox {
+  width: 200%;
+  max-width: 800px; /* Incrementar el máximo ancho para pantallas grandes */
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  max-height: 80vh; /* Para asegurar que no se salga de la pantalla */
+  overflow-y: auto; /* Para permitir desplazamiento si es necesario */
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  resize: none;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0070f3;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+.button:disabled {
+  background-color: #0070f3;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.loading {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #0070f3;
+}
+
+.response {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e9e9e9;
+  border-radius: 5px;
+  white-space: pre-wrap;
+  color: #333;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  .chatBox {
+    width: 90%; /* Asegurar que el ancho se ajuste en pantallas pequeñas */
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .header {
+    font-size: 20px; /* Ajustar el tamaño de la fuente en pantallas pequeñas */
+  }
+
+  .textarea {
+    min-height: 80px; /* Ajustar la altura mínima en pantallas pequeñas */
+  }
+
+  .button {
+    font-size: 14px; /* Ajustar el tamaño del botón en pantallas pequeñas */
+    padding: 8px 16px;
+  }
+
+  .response {
+    font-size: 14px; /* Ajustar el tamaño de la respuesta en pantallas pequeñas */
+  }
+}

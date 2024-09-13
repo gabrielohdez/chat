@@ -1,0 +1,722 @@
+﻿Anexo B
+
+# Metodología para el Control de la Calidad del Servicio Técnico
+
+Diciembre 2014
+
+## Índice
+
+1. Introducción
+    - Página 1-1
+2. Sistema de Información en Bases de Datos
+    - Generalidades: 2-1
+    - Criterios de extracción de datos: 2-1
+3. Criterios para la Determinación de los Indicadores
+    - Clasificación de los usuarios según la densidad de carga: 3-1
+    - Clasificación de centros de transformación de MTBT según la densidad de carga: 3-1
+    - Interrupciones internas y externas: 3-1
+    - Interrupciones menores o iguales a los 3 minutos: 3-1
+    - Interrupciones programadas: 3-1
+    - Interrupciones por causas de fuerza mayor y caso fortuito: 3-2
+    - Interrupciones originadas por defectos en las propias instalaciones del usuario: 3-2
+    - Corte de suministro por morosidad u otras causas: 3-2
+    - Interrupciones monofásicas en baja tensión: 3-2
+    - Interrupciones por maniobras: 3-2
+4. Métodos de Registro de Interrupciones
+    - Asignación de los tiempos de interrupción: 4-1
+    - Registro de interrupciones originadas en redes de baja tensión y alimentadores de media tensión: 4-1
+    - Registros de interrupciones originadas en alimentadores en media tensión: 4-1
+    - Sistema de recepción de reclamos: 4-1
+    - Sistema informático: 4-1
+5. Información a Remitir por la Distribuidora
+    - Periodicidad de la información: 5-1
+    - Información con periodicidad mensual: 5-1
+    - Informe de la calidad de servicio y suministro: 5-3
+    - Información con periodicidad anual: 5-3
+    - Requisitos y criterios para la presentación de la información: 5-3
+    - Interrupciones por causa de fuerza mayor: 5-4
+    - Carátula identificatoria de los casos fortuitos o de fuerza mayor: 5-6
+    - Declaración testimonial de personal: 5-7
+    - Formato de tablas: 5-8
+
+## Introducción
+
+La presente Base Metodológica para el Control de Calidad del Servicio Técnico tiene como finalidad unificar los criterios y procedimientos para registrar y gestionar todas las interrupciones del servicio de energía eléctrica relacionadas con las instalaciones y los usuarios finales afectados, en aplicación de las Normas de Calidad de Servicio de los Sistemas de Distribución. Estará a cargo de cada Distribuidora la recopilación de la información, el cálculo de los índices y la determinación de las compensaciones. La SIGET, al serle presentada dicha información, verificará la aplicación de todo el procedimiento tal como se describe en este documento.
+
+Con base en lo antes expuesto, las Distribuidoras determinarán indicadores globales e individuales de calidad por kVA instalados y por usuario, para cada etapa establecida en las Normas.
+
+## Sistema de Información en Bases de Datos
+
+### Generalidades
+
+Las Distribuidoras, para poder determinar los indicadores de calidad definidos en la Norma y con el objeto de posibilitar la identificación de los usuarios afectados ante cada falla de la red, deberán organizar toda la información en Bases de Datos, que deberán contener:
+
+a) La información de los usuarios y equipos afectados en cada interrupción, el inicio y fin de cada normalización, así como de los equipos operados para normalizar el servicio.
+b) La información sobre los equipos e instalaciones que abastecen a cada usuario final, con el siguiente nivel de agregación:
+   - Subestación AT/MT
+   - Alimentador MT
+   - Centro de transformación MT/BT y usuarios MT
+   - Alimentador BT (opcional, la Distribuidora podrá disponer de esta información si lo considera necesario para su gestión)
+
+Se define como BT: Baja Tensión y MT: Media Tensión.
+
+c) Deberán estar relacionadas con los archivos de facturación y permitir el cálculo de la energía no entregada a cada uno de los usuarios de manera global e individual. La SIGET realizará auditorías aleatorias en los centros de procesamiento de interrupciones y podrá requerir información para su control.
+
+### Criterios de extracción de datos
+
+La Distribuidora deberá contar con un programa informático con atributos de confiabilidad, seguridad y auditabilidad, para la extracción directa y automática de los datos de su sistema de gestión, el cual deberá consolidar la información a ser entregada a la SIGET.
+
+## Criterios para la Determinación de los Indicadores
+
+Para la determinación de los Indicadores de Calidad del Servicio Técnico y el cálculo de las compensaciones a los usuarios, se indican a continuación los criterios a ser tomados en cuenta:
+
+### Clasificación de los Usuarios según la densidad de carga
+
+Los usuarios finales deberán ser clasificados según la densidad de carga del área que les corresponda, y para definir la densidad de carga de cada área se deberá seguir lo indicado en el numeral 6 de la presente metodología.
+
+### Clasificación de Centros de Transformación de MTBT según la densidad de carga
+
+La clasificación de los Centros de Transformación de MTBT se realizará según la densidad de carga asignada a los usuarios que se encuentran conectados al centro, considerando que si la mayoría de usuarios conectados a dicho centro son de densidad de carga baja, el centro también se clasificará como perteneciente a un área de densidad de carga baja. De lo contrario, el centro deberá ser clasificado como perteneciente a un área de densidad de carga alta.
+
+### Interrupciones Internas y Externas
+
+Se considerarán como interrupciones internas del sistema de distribución aquellas fallas que afectan a la red de MT, con origen en las propias instalaciones de la Distribuidora. Las instalaciones que producen la interrupción en la red de MT pueden ser de MT o BT.
+
+Las interrupciones externas al sistema de distribución son aquellas que afectan a la red de MT, con origen en instalaciones externas a la Distribuidora, que producen corte de servicio a sus usuarios. Las instalaciones externas a que se hace referencia pueden ser de Generación, Transporte o de otros Distribuidores.
+
+A los efectos del seguimiento de índices globales de calidad por parte de la SIGET, los usuarios conectados en MT serán considerados como equivalentes a la potencia facturada de los mismos. Para el cálculo de los indicadores Individuales y Globales, serán consideradas únicamente las interrupciones internas a la red de distribución.
+
+### Interrupciones Menores o Iguales a los 3 minutos
+
+Las interrupciones menores o iguales a tres minutos, denominadas interrupciones momentáneas, deberán quedar registradas en la base de datos de interrupciones por usuario e informadas a la SIGET, pero no serán consideradas para la determinación de los indicadores. No obstante, para determinar las compensaciones establecidas en la Norma de Calidad de Servicio por energía no entregada, se considerarán todas las interrupciones sin importar su duración.
+
+### Interrupciones Programadas
+
+Las interrupciones programadas por la Distribuidora serán consideradas para la determinación de los indicadores y las compensaciones a los usuarios.
+
+### Interrupciones por Causas de Fuerza Mayor y Caso Fortuito
+
+Se considerarán todas las interrupciones, salvo las que sean aceptadas o estén en proceso de aceptación por la SIGET como originadas en causales de Fuerza Mayor y Caso Fortuito.
+
+### Interrupciones Originadas por Defectos en las Propias Instalaciones del Usuario
+
+Si como consecuencia de los defectos en las instalaciones de un usuario se produjeran interrupciones que afecten a otros usuarios, las mismas deberán ser computadas a efectos de la determinación de los indicadores de Calidad de Servicio Técnico de estos últimos.
+
+### Corte de Suministro por Morosidad u Otras Causas
+
+Las interrupciones relacionadas con domicilios de usuarios en situación de corte de suministro ordenado por el propio distribuidor basado en la Ley General de Electricidad, no serán computadas para el cálculo de los indicadores y de las compensaciones de Calidad del Servicio Técnico.
+
+### Interrupciones Monofásicas en Baja Tensión
+
+De producirse interrupciones monofásicas en BT y en el caso que la Distribuidora no cuente con la vinculación usuario-red que permita identificar la fase real a la cual se halla relacionado cada uno de ellos, se considerará a los efectos del cómputo, que las citadas interrupciones involucran a la totalidad de los usuarios asociados a la red afectada, independientemente de la fase a la que se hallen conectados.
+
+### Interrupciones por Maniobras
+
+Las interrupciones que tienen origen en maniobras realizadas por la distribuidora para reponer parcial o totalmente a clientes afectados por una interrupción forzada, se denominan interrupciones por maniobra. Estas interrupciones deben registrarse independientemente de su duración y a los fines del cálculo de las compensaciones por ENS, tendrán el mismo tratamiento que las interrupciones forzadas y programadas.
+
+## Métodos de Registro de Interrupciones
+
+### Asignación de los Tiempos de Interrupción
+
+La Distribuidora en todas las dependencias que tengan intervención en la asignación de los tiempos de las interrupciones deberá implementar un sistema que asegure uniformidad y sincronismo en el horario.
+
+### Registro de Interrupciones Originadas en Redes de Baja Tensión y Alimentadores de Media Tensión
+
+En el caso que la interrupción haya sido decidida por el propio distribuidor, se considerará
+
+ como horario de inicio, el real de la maniobra. Si la interrupción se produce en forma intempestiva, se adoptará como horario de inicio el que corresponda con el primer reclamo telefónico ingresado a la Distribuidora, o desde el momento en que ésta tenga conocimiento del evento por cualquier otro medio (el que suceda primero). En todos los casos, se considerará como horario final el que resulte al ser restablecido el servicio a los usuarios.
+
+### Registros de Interrupciones Originadas en Alimentadores en Media Tensión
+
+Los registros de los tiempos de interrupción para los alimentadores en MT que actualmente son informados por los operadores, se deberán reemplazar por aquellos provenientes de los sistemas automáticos de adquisición de datos, en forma inmediata a sus respectivas puestas en servicio por parte de la Distribuidora.
+
+### Sistema de Recepción de Reclamos
+
+Al ser una de las alternativas que el horario inicial de las interrupciones de BT y los alimentadores de MT sea determinado por el sistema de reclamos, la Distribuidora deberá asegurar que los usuarios tengan la posibilidad de acceso telefónico de forma ininterrumpida, y que el horario de recepción del reclamo quede registrado en forma automática e inmediata en el sistema de gestión de la Distribuidora. Toda limitación a dichas obligaciones será considerada como un incumplimiento por parte del distribuidor.
+
+### Sistema Informático
+
+Las modificaciones posteriores a la etapa de régimen que se realicen en el sistema informático, tanto en su estructura como en sus funciones, deberán ser documentadas e informadas a la SIGET dentro de los 15 días hábiles posteriores al mes en el que se implementaron. Esta información deberá contemplar como mínimo el siguiente detalle:
+1. Descripción General del Sistema
+2. Diagrama en Bloques
+3. Diseño de Entradas y Salidas
+4. Seguridad del Aplicativo
+5. Plataformas y Bases de Datos
+
+## Información a Remitir por la Distribuidora
+
+### Periodicidad de la Información
+
+Con el objeto de verificar el debido cumplimiento de las obligaciones de la empresa Distribuidora y llevar el seguimiento y control por parte de la SIGET, la Distribuidora deberá remitir la información organizada en tablas (bases de datos), con los formatos que se encuentran detalladas en la Sección 5.7 de esta Metodología. Las empresas Distribuidoras deberán remitir a la SIGET la información en forma mensual, semestral y anual, de acuerdo al detalle siguiente:
+- Información Mensual: Deberá ser remitida a más tardar dentro de los 15 días hábiles siguientes al final de cada mes, conjuntamente con la tabla DATOS_USUARIOS. La tabla DATOS_USUARIOS se enviará completa con todos los usuarios que estuvieron activos durante el primer mes del período de control, conjuntamente con las correspondientes tablas mensuales.
+- Información Semestral: Deberá ser remitida los primeros 15 días hábiles del mes siguiente al de finalización del período en estudio.
+- Información Anual: A excepción de la tabla DATOS_USUARIOS con los resultados del periodo de control, deberá ser remitida conjuntamente con la información mensual del último mes del periodo de control analizado.
+
+### Información con Periodicidad Mensual
+
+Dentro de los plazos establecidos en la Sección 5.1, la Distribuidora deberá remitir a la SIGET las siguientes tablas referidas a lo ocurrido el mes calendario anterior. En la Sección 5.7 se muestran los Formatos de cada una de las Tablas a presentar.
+
+| NOMBRETABLA         | PERIODO | DESCRIPCION                                             |
+|---------------------|---------|---------------------------------------------------------|
+| FUERZA_MAYOR        | Mensual | Tabla de casos con invocación de causal por Fuerza Mayor |
+| INTERRUPCIONES      | Mensual | Tabla de Interrupciones                                 |
+| REPOSICIONES        | Mensual | Tabla de Reposiciones                                   |
+| EXTERNAS            | Mensual | Interrupciones Externas informadas por la UT            |
+| CENTROS_MTBT        | Mensual | Tabla de Centros de Transformación MT/BT afectados      |
+| INSTALACIONES       | Mensual | Tabla total de instalaciones para red normal            |
+| REP_USUARIOS        | Mensual | Tabla de interrupciones por usuario                     |
+| RECLAMOS_INTERR     | Mensual | Tabla de reclamos de usuarios (sólo los correspondientes a falta de suministro) |
+| FACTURACION         | Mensual | Energía y monto facturado mensual de cada usuario       |
+| COMPENSACION        | Mensual | Tabla de Compensaciones abonadas a los Usuarios         |
+| CARGO_ENERGIA       | Mensual | Tabla de precios de la energía por tarifa               |
+| USUARIO_COMERCIALIZADOR | Mensual | Datos de los usuarios que posean contratos con un Comercializador |
+| NOMBRE_COMERCIALIZADOR | Mensual | Nombre del Comercializador                             |
+| ENS_INTERRUPCION    | Mensual | Detalle de energía no entregada por cada interrupción   |
+| USUARIOS_COMUNIDADES | Mensual | Detalle de usuarios que no han podido demostrar la propiedad o legítima posesión del inmueble que habitan o que no cuentan con las autorizaciones respectivas del dueño del inmueble para contratar el suministro de energía eléctrica |
+| DATOS_CENTROS       | Mensual | Datos Técnicos de los Centros de Transformación de MT/BT |
+| AREA_USUARIO        | Mensual | Relación de cada usuario con el área de densidad de carga que le corresponde |
+
+### Informe de la Calidad de Servicio y Suministro
+
+Las empresas distribuidoras deberán incluir un informe ejecutivo en donde se presente el resumen de la evolución de los indicadores de cada mes y los resultados correspondientes a los referidos semestres. Este informe deberá ser presentado en forma escrita y en medio magnético, en las fechas establecidas en la sección 5.1.
+
+### Información con Periodicidad Anual
+
+En los plazos indicados en el punto 5.1 de la presente Base Metodológica, la Distribuidora deberá remitir a la SIGET la información indicada a continuación:
+
+| NOMBRETABLA          | PERIODO | DESCRIPCION                                       |
+|----------------------|---------|---------------------------------------------------|
+| DATOS_USUARIOS       | Anual con actualización mensual | Datos de todos los Usuarios                    |
+| COMPENSACION_LIMITE  | Anual   | Tabla de las compensaciones a los usuarios por excederse límites |
+| SALIDA_INDIVIDUAL    | Anual   | Tabla de Indicadores por Usuario                  |
+| SALIDA_GLOBAL        | Anual   | Tabla de Indicadores Globales                     |
+| AREAS_DENSIDAD_CARGA | Anual   | Detalle de las áreas de densidad de carga de la distribuidora |
+| AREA_MUNICIPIO       | Anual   | Información a nivel de municipio relacionada con las áreas de densidad de carga |
+
+En las tablas SALIDA_INDIVIDUAL y SALIDA_GLOBAL, se requiere el cálculo de energía no entregada por excederse el indicador SAIFI, SAIDI, TTIK y FMIK en forma individual y global para las áreas de densidad de carga alta y baja de cada Distribuidora, así como considerando las interrupciones originadas o no en razón de fuerza mayor, para cada período de control con el objeto de verificar el nivel de calidad proporcionada al usuario final por las Distribuidoras.
+
+### Requisitos y Criterios para la Presentación de la Información
+
+A los fines del seguimiento y control que efectuará la SIGET para verificar el cumplimiento de las obligaciones de la Distribuidora, ésta deberá remitir la siguiente información, organizada en tablas en formato ASCII de acuerdo a lo detallado en la Sección 5.7 del presente documento. Los campos de los registros informados en dichas tablas deberán estar delimitados por el separador de campo PIPE (|). Asimismo, como final de línea se debe utilizar CrLf (ASCII 13 + ASCII 10). Se deben informar la totalidad de los campos, aunque algunos de ellos no contengan datos, en cuyo caso quedarán vacíos y respetando el orden establecido en las tablas descritas. Los formatos de fecha y hora se deberán uniformizar de la siguiente manera:
+a) fecha: dd/mm/aaaa Ejemplo: fecha 27/08/2005
+b) fecha + hora: dd/mm/aaaa hh:mm Ejemplo: fecha + hora 27/08/2005 13:08
+
+El campo decimal será informado con dos decimales, mientras que los campos de texto no podrán informarse con delimitadores propios, comillas dobles (“) o simples(‘).
+
+Las tablas deberán remitirse a la SIGET por medios magnéticos, de conformidad a lo establecido en la Sección No. 5.1, nombradas de acuerdo a la codificación indicada a continuación:
+1 2 3 4 5 _NOMBRETABLA.xxx
+
+Dígito 1 - Identificación de la Distribuidora
+- A - CAESS
+- B - CLESA
+- C - DEUSEM
+- D - DELSUR
+- E - EEO
+- F - EDESAL
+- G - B&D, SERVICIOS TÉCNICOS
+- H - ABRUZZO
+
+Dígito 2 - Código de identificación de la Campaña
+- T: Calidad de Servicio Técnico
+
+Dígito 3 y 4 - Código de identificación del Año de envío
+- Dos últimos dígitos del Año
+
+Dígito 5 - Código de identificación del Mes de Envío
+- El mes o el semestre de envío, dependiendo de la campaña de control y tipo de tabla. 1 al 9, O, N, D.
+
+NOMBRETABLA: Denomin
+
+ación de la Tabla enviada. Definidas en la Sección 5.2 y 5.4 del presente documento.
+
+En los casos que deba informarse el nombre de municipios y/o departamentos, éstos deberán ser expresados en letras mayúsculas, sin acentos, ni abreviaturas, ni símbolos ajenos al alfabeto español, no se deberán utilizar las palabras “DEPARTAMENTO” o “MUNICIPIO”, ni espacios al inicio o al final de los nombres, y para el caso de nombres compuestos por dos o más palabras se deberá utilizar exactamente un espacio como separador entre éstas.
+
+### Interrupciones por Causa de Fuerza Mayor
+
+El último día hábil del mes, la Distribuidora deberá ofrecer a la SIGET todas las pruebas conducentes a establecer la causal Fuerza Mayor o Caso Fortuito alegadas, de las interrupciones ocurridas en el mes calendario en cuestión, acompañando la información documental e identificando cada una de ellas con la carátula y en la forma prevista en la Sección 5.6.1, todo ello bajo apercibimiento de caducidad del derecho a ser eximidas de responsabilidad por dicha causal. En el mismo acto, tratándose de personal de la misma Distribuidora que hubiere tenido alguna intervención en los hechos, podrán presentar la declaración jurada testimonial del mismo bajo al menos la forma prevista en la Sección 5.6.2, sin que ello impida a que el declarante sea citado por la SIGET, cuando lo considere necesario para el esclarecimiento de los hechos, a ratificar o ampliar personalmente dicha declaración. Si la empresa distribuidora no presenta la solicitud en término previsto para tal efecto, no existirá dispensa de compensación por energía no entregada al usuario final del hecho acaecido y se deberá considerar para el cálculo de los indicadores. La SIGET pondrá en conocimiento de la Distribuidora las interrupciones a cuyo respecto proceda el rechazo de las causales de Fuerza Mayor o Caso Fortuito invocadas. La Distribuidora podrá, dentro de los 5 días de notificada de la resolución anterior, presentar su descargo.
+
+### Carátula Identificatoria de los Casos Fortuitos o de Fuerza Mayor
+
+| Mes: |  |
+| CASOS FORTUITOS O DE FUERZA MAYOR |  |
+| CASO N°: |  |
+| DATOS IDENTIFICATORIOS: |  |
+| Identificación Interrupción: |  |
+| Fecha de Inicio: |  |
+| Instalación Afectada: |  |
+| Hora de Inicio: |  |
+| Cantidad de Usuarios Afectados: |  |
+| Duración en minutos: |  |
+| Causal |  |
+| Causa: |  |
+| Detalle: |  |
+| Breve descripción del hecho |  |
+
+| Resumen de pruebas aportadas (1) |  |
+| 1. |  |
+| 2. |  |
+| 3. |  |
+| 4. |  |
+| 5. |  |
+| 6. |  |
+| Reservado SIGET |  |
+| Resultado: |  |
+| Comentarios: |  |
+
+(1) La Distribuidora deberá aportar todas las pruebas que considere pertinentes para respaldar el hecho acaecido.
+
+### Declaración Testimonial de Personal
+
+DECLARACIÓN TESTIMONIAL DE PERSONAL DE EMPRESAS DISTRIBUIDORAS SOBRE INTERRUPCIONES EN EL SERVICIO TÉCNICO
+
+1. Distribuidora.
+2. Dependencia interna.
+3. Fecha de la interrupción.
+4. Hora.
+5. Duración de la interrupción.
+6. Nómina del personal actuante.
+7. Designación y ubicación de la o las instalaciones afectadas.
+8. Descripción de la contingencia.
+9. Causa de la interrupción, aclarando cómo o por qué lo sabe.
+10. Especificar restos materiales encontrados en el lugar, aclarando cómo o por qué lo sabe.
+11. Datos identificatorios del o los terceros causantes de la interrupción, aclarando cómo y por qué lo sabe.
+12. Especificar las medidas de prevención que existían, en caso que las hubiere, para evitar el hecho.
+13. Otros datos que considere de interés aportar.
+
+A los fines de su presentación ante la SIGET declaró bajo juramento que la información que antecede es verdadera. En ..........................................., a los ............ días del mes de .......................................... de ......................-
+
+..........................................................
+Nombre y Firma
+
+Documento Identidad N°: ......................................
+
+En mi carácter de ................................................................................................................. certifico que la firma que antecede es auténtica
+
+Firma y aclaración de superior jerárquico del declarante
+
+### Formato de Tablas
+
+INFORMACIÓN CON PERIODICIDAD MENSUAL
+
+TABLA: FUERZA_MAYOR (Tabla de Casos Fortuitos o Fuerza Mayor)
+
+| CAMPO          | DESCRIPCIÓN                                             | TIPO        |
+|----------------|---------------------------------------------------------|-------------|
+| Caso N°        | correlativo de caso                                      | Entero      |
+| IDInter        | Identificación de la Interrupción (Unívoca para cada Interrupción) | Texto (20)  |
+| InstalacionAfect | Instalaciones afectadas (SE, Circuito, etc.)           | Texto (50)  |
+| UsuaAfect      | Cantidad de usuarios afectados                           | Entero      |
+| FechaIn        | Fecha y hora de inicio de la interrupción                | Fecha + Hora|
+| FechaRp        | Fecha y hora de última reposición                        | Fecha + Hora|
+| Duracion       | Duración en minutos de la interrupción para la última reposición | Entero      |
+| Causal         | Código de causa de Fuerza Mayor (*)                      | Texto (3)   |
+| Descripcion    | Breve descripción de los hechos                          | Texto (255) |
+| P-1            | Prueba Presentada – Si (S) No (N)                        | Texto (1)   |
+| P-2            | Prueba Presentada – Si (S) No (N)                        | Texto (1)   |
+| P-3            | Prueba Presentada – Si (S) No (N)                        | Texto (1)   |
+| P-4            | Prueba Presentada – Si (S) No (N)                        | Texto (1)   |
+| P-5            | Prueba Presentada – Si (S) No (N)                        | Texto (1)   |
+| P-6            | Prueba Presentada – Si (S) No (N)                        | Texto (1)   |
+| ResolucionSIGET| Resultado de la SIGET - Aprobado (A), No aprobado (N)    | Texto (1)   |
+| ExpteSIGET     | Expediente de la SIGET                                   | Texto (20)  |
+
+TABLA: INTERRUPCIONES
+
+Se deberán informar todas las interrupciones, incluidas aquellas menores o iguales a 3 minutos.
+
+| CAMPO          | DESCRIPCION                                             | FORMATO     |
+|----------------|---------------------------------------------------------|-------------|
+| IDInter        | Identificación de la Interrupción (Unívoca para cada Interrupción) | Texto (20)  |
+| Sistema        | Tipo de Sistema: AT(A), MT (M) y BT (B)                  | Texto (1)   |
+| Origen         | Origen: Internas (I), Externas (E)                       | Texto (1)   |
+| Tipo           | Forzado (F), Programado (P), Por maniobra (M)            | Texto (1)   |
+| FechaIn        | Fecha y Hora de Inicio de la Interrupción                | Fecha + Hora|
+| DiviRed        | División Red: Normal (N) o Alterada (A)                  | Texto (1)   |
+| IDelem         | Código de identificación del elemento de red origen de interrupción | Texto (50)  |
+| TipoElem       | Descripción del elemento de red origen de interrupción (interruptor, fusible, etc.) | Texto (50)  |
+| SSEE           | Subestación AT/MT o Nº de transformador desde donde se alimenta el elemento de red origen de la interrupción. | Texto (50)  |
+| Circuito       | Nº de circuito de MT desde donde se alimenta el elemento de red origen de la Interrupción. | Texto (20)  |
+
+TABLA: REPOSICIONES
+
+Se deberán informar todas las reposiciones, incluidas las menores o iguales a 3 minutos.
+
+| CAMPO          | DESCRIPCION                                             | FORMATO     |
+|----------------|---------------------------------------------------------|-------------|
+| IDInter        | Identificación de la interrupción (unívoca para cada interrupción) | Texto (20)  |
+| IDRepos        | Identificación de la reposición (unívoca para cada reposición) | Texto (20)  |
+| FechaRp        | Fecha y Hora de la reposición                            | Fecha + Hora|
+| IDElem         | Descripción del último elemento de red que dio origen de la reposición (interruptor, fusible, etc.) | Texto (50)  |
+| TipoElem       | Descripción del elemento de red origen de la reposición (interruptor, fusible, etc.) | Texto (50)  |
+| SSEE           | Subestación AT/MT o N° de transformador desde donde se alimenta el elemento maniobrado para reposición. | Texto (50)  |
+| Circuito       | Nº de circuito de MT desde donde se alimenta el elemento maniobrado para la reposición. | Texto (20)
+
+  |
+
+TABLA: EXTERNAS
+
+Se deberán informar las interrupciones externas que hayan afectados a la Distribuidora informados por la UT.
+
+| CAMPO          | DESCRIPCIÓN                                             | TIPO        |
+|----------------|---------------------------------------------------------|-------------|
+| IDInter        | Identificación de la Interrupción (Unívoca para cada Interrupción) | Texto (20)  |
+| ENS            | Energía no Servida asociada a una interrupción externa   | Decimal     |
+| FechaInEXT     | Fecha y Hora de Inicio de la Interrupción informado por la UT | Fecha + Hora|
+| FechaRpEXT     | Fecha y Hora de la normalización de la Falla Externa informado por la UT | Fecha + Hora|
+
+TABLA: CENTROS_MTBT
+
+Se deberán informar todos los centros MT/BT afectados
+
+| CAMPO          | DESCRIPCION                                             | FORMATO     |
+|----------------|---------------------------------------------------------|-------------|
+| IDInter        | Identificación de la interrupción (unívoca para cada interrupción) | Texto (20)  |
+| IDRepos        | Identificación de la reposición (unívoca para cada reposición) | Texto (20)  |
+| CenMTBT        | Nº de centro MT/BT.                                      | Texto (20)  |
+| kVA            | kVA Instalados del transformador Repuesto.               | Entero      |
+| TipoServicio   | Densidad de carga alta (U) y Densidad de carga baja (R)  | Texto (1)   |
+
+TABLA: INSTALACIONES
+
+Se deberá informar el total de instalaciones para red normal
+
+| CAMPO          | DESCRIPCION                                             | FORMATO     |
+|----------------|---------------------------------------------------------|-------------|
+| Circuito       | Nº de circuito de MT.                                    | Texto (20)  |
+| SSEE           | Código o identificación de la Subestación AT/MT a la cual pertenece el circuito | Texto (50)  |
+| TrafosUrb      | Cantidad total de transformadores MT/BT clasificados en la densidad de carga alta en el circuito para división red normal | Entero      |
+| TrafosRur      | Cantidad total de transformadores MT/BT clasificados en la densidad de carga baja en el circuito para división red normal | Entero      |
+| kVAInsUrb      | kVA instalados totales clasificados en la densidad de carga alta para el circuito de MT, determinados como suma de potencias nominales de los transformadores MT/BT de densidad de carga alta para división red normal, sin considerar los usuarios conectados en MT. | Entero      |
+| kVAInsRur      | kVA instalados totales clasificados en la densidad de carga baja para el circuito de MT, determinados como suma de potencias nominales de los transformadores MT/BT de densidad de carga baja para división red normal, sin considerar los usuarios conectados en MT. | Entero      |
+| PotContUrb     | Sumatoria de las Potencias Facturadas a los Usuarios con tarifa MT ubicados en áreas de densidad de carga alta en el circuito. | Entero      |
+| PotContRur     | Sumatoria de las Potencias Facturadas a los Usuarios con tarifa MT ubicados en áreas de densidad de carga baja en el circuito. | Entero      |
+
+TABLA: REP_USUARIOS
+
+Se deberán informar todos los usuarios afectados para todas las interrupciones, incluidas las menores o iguales a 3 minutos.
+
+| CAMPO          | DESCRIPCION                                             | FORMATO     |
+|----------------|---------------------------------------------------------|-------------|
+| IDInter        | Identificación de la Interrupción (unívoca para cada interrupción) | Texto (20)  |
+| IDRepos        | Identificación de la Reposición (unívoca para cada reposición) | Texto (20)  |
+| IDUsuario      | Identificación única del usuario (Identificador, Nº de cuenta, etc.) | Texto (30)  |
+| Tarifa         | Tarifa vigente del usuario al momento de la interrupción | Texto (5)   |
+
+TABLA: RECLAMOS_INTERR
+
+| CAMPO          | DESCRIPCION                                             | FORMATO     |
+|----------------|---------------------------------------------------------|-------------|
+| IDUsuario      | Identificación única del usuario (identificador, Nº de cuenta, etc. según corresponda) | Texto (30)  |
+| Codreclamo     | Identificación única que el sistema otorga al reclamo    | Texto (20)  |
+| FechaRe        | Fecha y Hora de ingreso del reclamo                      | Fecha + Hora|
+| IDInter        | Identificación de la interrupción motivo del reclamo (unívoca para cada interrupción) | Texto (20)  |
+| CodFalla       | Código del tipo de falla motivo del reclamo Interna (I)I/Externa (E) | Texto (1)   |
+
+TABLA: FACTURACION
+
+| CAMPO          | DESCRIPCIÓN                                             | TIPO        |
+|----------------|---------------------------------------------------------|-------------|
+| IDUsuario      | Identificación única del usuario (identificador, N° cuenta, etc según corresponda) | Texto (30)  |
+| Energia*       | Energía mensual facturada (kWh)                          | Decimal     |
+| MontoFacturado | Monto Facturado en el mes (Dólares)                      | Decimal     |
+| MontoProm3UF   | Monto Promedio de las tres últimas facturas              | Decimal     |
+
+(): Cuando se dé el caso de una energía negativa, se deberá colocar en este campo el promedio de los 6 últimos meses de la energía facturada.
+
+Para usuarios con medición horaria, se deberá completar con la resultante de la suma de las energías registradas en los tramos horarios establecidos.
+
+TABLA: COMPENSACION
+
+| CAMPO          | DESCRIPCION                                             | TIPO        |
+|----------------|---------------------------------------------------------|-------------|
+| IDUsuario      | Identificación única del usuario (identificador, Nº de cuenta, etc. según corresponda) | Texto (30)  |
+| CodOperacionCredito | Operación de crédito correspondiente a la imputación del monto total de la compensación aplicada a la cuenta del cliente | Texto (20)  |
+| CompensaciónAcreditada | Monto total en dólares de la compensación acreditada, por Energía No Entregada o No Suministrada (ENS) durante todas las fallas ocurridas en la red de distribución sin importar la duración de las mismas | Decimal     |
+
+TABLA: CARGO_ENERGIA (Precios de energía por tarifa para el cálculo de las compensaciones)
+
+| CAMPO          | DESCRIPCIÓN                                             | TIPO        |
+|----------------|---------------------------------------------------------|-------------|
+| Tarifa         | Tarifa correspondiente al Usuario o la Empresa según corresponda (*) | Texto (10)  |
+| CargoEnergia   | Cargo de energía ponderada para la tarifa y/o Empresa    | Decimal     |
+| CargoEnergiaPunta | Cargo de energía en punta para la tarifa               | Decimal     |
+| CargoEnergiaResto | Cargo de energía en resto para la tarifa               | Decimal     |
+| CargoEnergiaValle | Cargo de energía en valle para la tarifa               | Decimal     |
+
+(*) El cargo de energía ponderado para toda la Empresa se informará en el campo “CargoEnergia” con el código “GLOBAL” en el campo Tarifa y en los campos “CargoEnergiaPunta”, “CargoEnergiaResto” y “CargoEnergiaValle” se informará con cero. Cuando la tarifa sea global se deberá ir declarando el precio promedio ponderado acumulado del año, por lo que se utilizará para el cálculo de las compensaciones el del mes de diciembre, pues es el que refleja todo el año. Cuando la tarifa es sin medición horaria, los campos especificados para Punta, Resto y Valle irán vacíos. En el caso que se trate de medición horaria, en el campo CargoEnergia se colocará el precio por tarifa promedio ponderada, además de colocar los cargos de punta, resto y valle. En los meses que exista cambio de tarifa, se utilizará una tarifa ponderada en base a los días en los cuales ha estado vigente cada una de las tarifas (tarifa1* (# días vigente en el mes/total de días del mes)+ tarifa 2*(# días vigente en el mes/total de días del mes)).
+
+TABLA: USUARIO_COMERCIALIZADOR
+
+| CAMPO          | DESCRIPCION                                             | TIPO        |
+|----------------|---------------------------------------------------------|-------------|
+| IDUsuario      | Identificación única del usuario (identificador, Nº de cuenta, etc. según corresponda) | Texto (30)  |
+| CodigoComercializador | Código del Comercializador con el cual el usuario posee Contrato. | Texto (10)  |
+
+TABLA: NOMBRE_COMERCIALIZADOR
+
+| CAMPO          | DESCRIPCION                                             | TIPO        |
+|----------------|---------------------------------------------------------|-------------|
+| CodigoComercializador | Código del Comercializador con el cual el usuario posee Contrato. | Texto (10)  |
+| NombreComercializador | Nombre del Comercializador                         | Texto (50)  |
+
+TABLA: ENS_INTERRUPCION (Detalle de energía no entregada por cada interrupción)
+
+| CAMPO          | DESCRIPCION                                             | TIPO        |
+|----------------|---------------------------------------------------------|-------------|
+| IDEmpresa      | Identificador de la Distribuidora                        | Entero      |
+| IDUsuario      | Identificador del usuario                                | Texto (30)  |
+| IDInter        | Identificador de la
+
+ interrupción                         | Texto (20)  |
+| IDRepos        | Identificador de la reposición                           | Texto (20)  |
+| Tipo           | Forzada (F), Programada (P), Por maniobra (M)            | Texto (1)   |
+| Origen         | Interna (I), Externa (E)                                 | Texto (1)   |
+| FuerzaMayor    | Si el registro corresponde a una interrupción catalogada como caso fortuito o de fuerza mayor y ha sido aprobada por la SIGET se deberá colocar en esta columna el código “A”, en caso de haber sido rechazada colocar “R” y en caso de no corresponder a un caso fortuito o de fuerza mayor, dejar el campo nulo | Texto (1)   |
+| Duracion       | Duración en minutos del período entre la interrupción y la reposición que afectaron al usuario | Entero      |
+| ENS            | Energía no servida (kWh) asociada a la interrupción, independientemente de que haya sido o no presentada como un caso de fortuito o de fuerza mayor, calculada conforme a lo establecido en el Acuerdo No.116-E-2003 | Decimal     |
+| CENS           | Costo de la energía no servida (US$) asociada a la interrupción, independientemente de que haya sido o no presentada como un caso de fortuito o de fuerza mayor, calculada conforme a lo establecido en el Acuerdo No.116-E-2003 | Decimal     |
+| PeriodoInter   | Período en el cual se registra la interrupción           | Fecha       |
+| PeriodoCompen  | Período en el cual se aplica la compensación             | Fecha       |
+| IDFactura      | Número de factura en la cual se aplicó la compensación, cuando la interrupción no corresponde con un caso fortuito o de fuerza mayor aceptado o pendiente de resolución por parte de la SIGET | Texto       |
+
+Donde IDEmpresa es:
+- 1: CAESS
+- 2: AES CLESA
+- 3: DEUSEM
+- 4: DELSUR
+- 5: EEO
+- 6: EDESAL
+- 7: B&D, Servicios Técnicos
+- 8: ABRUZZO
+
+TABLA: USUARIOS_COMUNIDADES
+
+Detalle de usuarios que no han podido demostrar la propiedad o legítima posesión del inmueble que habitan o que no cuentan con las autorizaciones respectivas del dueño del inmueble para contratar el suministro de energía eléctrica.
+
+| CAMPO          | DESCRIPCION                                             | TIPO        |
+|----------------|---------------------------------------------------------|-------------|
+| IDEmpresa      | Identificador de la Distribuidora                        | Entero      |
+| Periodo        | Período de alta del suministro                           | Fecha       |
+| IDUsuario      | Identificador del usuario que no ha podido demostrar la propiedad o legítima posesión del inmueble que habita o que no cuenta con las autorizaciones respectivas del dueño del inmueble para contratar el suministro de energía eléctrica | Texto (30)  |
+| IDCentro       | Identificador del centro de transformación MT/BT         | Texto (20)  |
+
+Donde IDEmpresa es:
+- 1: CAESS
+- 2: AES CLESA
+- 3: DEUSEM
+- 4: DELSUR
+- 5: EEO
+- 6: EDESAL
+- 7: B&D, Servicios Técnicos
+- 8: ABRUZZO
+
+TABLA: DATOS_CENTROS
+
+Se informará la totalidad de los centros MT/BT o transformadores que estuvieron en servicio en algún momento durante el mes.
+
+| CAMPO          | DESCRIPCIÓN                                             | FORMATO     |
+|----------------|---------------------------------------------------------|-------------|
+| CenMTBT        | Nº de centro MT/BT.                                      | Texto (20)  |
+| TensionServicio | Tensión Nominal de Servicio del Circuito al cual está conectado (primario) | Entero      |
+| TipoArrollamiento | Monofásico (M), Bifásico (B) o Trifásico (T))         | Texto (1)   |
+| TipoServicio   | Densidad de carga alta (U) / Densidad de carga baja (R)  | Texto (1)   |
+| TipoCon        | Subestación aérea, Subestación a nivel, Subterránea      | Texto (10)  |
+| NumTrafo       | Número de Trafos en el Centro MT/BT                      | Texto (10)  |
+| kVAinst        | kVA instalado total en el Centro MT/BT                   | Entero      |
+| Dirección      | Dirección donde se ubica el centro de transformación     | Texto (30)  |
+| Municipio      | Nombre del Municipio                                     | Texto (20)  |
+| Departamento   | Nombre del Departamento                                  | Texto (20)  |
+| Sucursal       | Nombre de la sucursal o zona en que está dividido la Distribuidora | Texto (20)  |
+| SSEE           | Subestación AT/MT al cual está conectado.                | Texto (50)  |
+| Circuito       | Nº de alimentador MT desde donde se alimenta al CTMTBT en división red normal | Texto (20)  |
+| CoordenadaX    | CoordenadaX (Sistema Universal Transverse Mercator –UTM-) de la posición del Centro de Transformación | Decimal     |
+| CoordenadaY    | CoordenadaX (Sistema Universal Transverse Mercator –UTM-) de la posición del Centro de Transformación | Decimal     |
+
+TABLA: AREA_USUARIO
+
+Tabla en la que informa la totalidad de los usuarios, con el respectivo código de área de densidad de carga (cuadrícula) que les corresponde.
+
+| CAMPO          | DESCRIPCIÓN                                             | TIPO        |
+|----------------|---------------------------------------------------------|-------------|
+| IdUsuario      | Identificación única del usuario                         | Texto (20)  |
+| IdArea         | Identificación única del área de densidad de carga       | Texto (20)  |
+
+INFORMACIÓN CON PERIODICIDAD ANUAL
+
+TABLA: DATOS_USUARIOS (Datos de los Usuarios de la Distribuidora)
+
+| CAMPO          | DESCRIPCIÓN                                             | TIPO        |
+|----------------|---------------------------------------------------------|-------------|
+| IDUsuario      | Identificación única del usuario (identificador, Nº de cuenta, etc. según corresponda) | Texto (30)  |
+| Tarifa         | Tarifa correspondiente al usuario                        | Texto (5)   |
+| TipoRegistro   | Indica si es un registro dado de alta, de baja o si tiene modificación en alguno de sus campos (A=Alta, B=Baja, M=Modificación) | Texto (1)   |
+| TensionServicio | Tensión Nominal de Servicio del Usuario                 | Entero      |
+| AreaGeografica | Densidad Alta (A) / Media (M) / Baja (B)                 | Texto (1)   |
+| TipoServicio   | Densidad de carga alta (U) / Densidad de carga baja (R)  | Texto (1)   |
+| TipoInstalacion | Monofásica (M) / Trifásica (T)                          | Texto (1)   |
+| Subestación    | Subestación AT/MT o Nº de transformador desde donde se alimenta al usuario | Texto (50)  |
+| Circuito       | Nº de circuito MT desde donde se alimenta al usuario para división red normal | Texto (50)  |
+| CenMTBT        | Nº de centro MT/BT desde donde se alimenta al usuario en BT para división red normal | Texto (20)  |
+| IDMedidor      | Identificación de medidor                                | Texto (25)  |
+| TipoMedidor    | Código de Identificación del tipo de medidor (nos deben enviar los tipos) | Texto (30)  |
+| FechaColocacion | Fecha de colocación de medidor                          | Fecha       |
+| Nombre         | Nombre del usuario                                       | Texto (50)  |
+| Calle          | Calle                                                    | Texto (60)  |
+| NumeroVivienda | Número                                                   | Texto (10)  |
+| Piso           | Piso                                                     | Texto (10)  |
+| Unidad         | Unidad/Apartamento                                       | Texto (5)   |
+| Telefono       | Teléfono                                                 | Texto (10)  |
+| Departamento   | Departamento                                             | Texto (50)  |
+| Municipio      | Municipio                                                | Texto (50)  |
+| Colonia        | Colonia o Cantón                                         | Texto (50)  |
+| Potencia       | Potencia facturada                                       | Decimal     |
+| CoordenadaX    | CoordenadaX (Sistema Universal Transverse Mercator –UTM-) de la posición del Usuario | Decimal     |
+| CoordenadaY    | CoordenadaY (Sistema Universal Transverse Mercator –UTM-) de la posición del Usuario | Decimal     |
+
+TABLA: COMPENSACION_LIMITE (Tabla Anual)
+
+| CAMPO              | DESCRIPCIÓN                                             | TIPO        |
+|--------------------|---------------------------------------------------------|-------------|
+| IDUsuario          | Identificación única del usuario (identificador, Nº de cuenta, etc. según corresponda) | Texto (30)  |
+| CompensacionGlobal | Monto total en dólares de la compensación calculada para el Usuario por excederse de los Limites Globales | Decimal     |
+| CompensacionIndividual | Monto total en dólares de la compensación calculada para el Usuario por excederse de los Limites Individuales | Decimal     |
+
+TABLA: SALIDA_INDIVIDUAL
+
+Se deberá informar los indicadores individuales por usuario
+
+| CAMPO             | DESCRIPCIÓN                                             | FORMATO     |
+|-------------------|---------------------------------------------------------|-------------|
+| IDUsuario         | Identificación única del usuario (identificador, Nº de cuenta, etc. según corresponda) | Texto (30)  |
+| SAIFI             | Frecuencia de interrupciones por usuario                 | Decimal     |
+| SAIDI             | Tiempo de interrupción por usuario                       | Decimal     |
+| ENSAIFIUsuario    | Energía no suministrada por excederse el indicador SAIFI | Decimal     |
+| ENSAIDIUsuario    | Energía no suministrada por excederse el indicador SAIDI | Decimal     |
+
+TABLA: SALIDA_GLOBAL
+
+| CAMPO          | DESCRIPCIÓN                                             | TIPO        |
+|----------------|---------------------------------------------------------|-------------|
+| CODIndicador   | Código de Indicador según tabla adjunta                 | Texto (25)  |
+| Valor          | Valor del Indicador                                     | Decimal     |
+
+El CODIndicador deberá indicarse de acuerdo a la siguiente codificación:
+
+| CODIndicador        | DESCRIPCIÓN                                                                | FORMATO |
+|---------------------|----------------------------------------------------------------------------|---------|
+| FMIKusfm            | Indicador FMIK calculado por la Distribuidora sin F. Mayor, para área de densidad de carga alta. | Decimal |
+| TTIKusfm            | Indicador TTIK calculado por la Distribuidora sin F. Mayor, para área de densidad de carga alta | Decimal |
+| FMIKrsfm            | Indicador FMIK calculado por la Distribuidora sin F. Mayor, para área de densidad de carga baja | Decimal |
+| TTIKrsfm            | Indicador TTIK calculado por la Distribuidora sin F. Mayor, para área de densidad de carga baja | Decimal |
+| ENSFMIKu            | ENS por exceder el límite el Indicador FMIK calculado por la Distribuidora, para área de densidad de carga alta | Decimal |
+| ENSTTIKu            | ENS por exceder el límite el Indicador TTIK calculado por la Distribuidora, para área de densidad de carga alta | Decimal |
+| ENSFMIKr            | ENS por exceder el límite el Indicador FMIK calculado por La Distribuidora, para área de densidad de carga baja | Decimal |
+| ENSTTIKr            | ENS por exceder el límite el Indicador TTIK calculado por La Distribuidora, para área de densidad de carga baja | Decimal |
+| ENSAIFISistemaU     | ENS por exceder el límite el Indicador SAIFI calculado por La Distribuidora, para área de densidad de carga alta | Decimal |
+| ENSAIFISistemaR     | ENS por exceder el límite el Indicador SAIFI calculado por La Distribuidora, para área de densidad de carga baja | Decimal |
+| ENSAIDISistemaU     | ENS por exceder el límite el Indicador SAIDI calculado por La Distribuidora, para área de densidad de carga alta | Decimal |
+| ENSAIDISistemaR     | ENS por exceder el límite el Indicador SAIDI calculado por La Distribuidora, para área de densidad de carga baja | Decimal |
+| FMIKutot            | Indicador FMIK calculado por la Distribuidora considerando todas las Interrupciones, para área de densidad de carga alta | Decimal |
+| TTIKutot            | Indicador TT
+
+IK calculado por la Distribuidora considerando todas las Interrupciones, para área de densidad de carga alta | Decimal |
+| FMIKrtot            | Indicador FMIK calculado por la Distribuidora considerando todas las Interrupciones, para área de densidad de carga baja | Decimal |
+| TTIKrtot            | Indicador TTIK calculado por la Distribuidora considerando todas las Interrupciones, para área de densidad de carga baja | Decimal |
+| ENSFMIKutot         | ENS por exceder el límite el Indicador FMIK calculado por la Distribuidora considerando todas las Interrupciones, para área de densidad de carga alta | Decimal |
+| ENSTTIKutot         | ENS por exceder el límite el Indicador TTIK calculado por la Distribuidora considerando todas las Interrupciones, para área de densidad de carga alta | Decimal |
+| ENSFMIKrtot         | ENS por exceder el límite el Indicador FMIK calculado por La Distribuidora considerando todas las Interrupciones, para área de densidad de carga baja | Decimal |
+| ENSTTIKrtot         | ENS por exceder el límite el Indicador TTIK calculado por La Distribuidora considerando todas las Interrupciones, para área de densidad de carga baja | Decimal |
+| ENSAIFISistemaUtot  | ENS por exceder el límite el Indicador SAIFI calculado por La Distribuidora considerando todas las Interrupciones, para área de densidad de carga alta | Decimal |
+| ENSAIFISistemaRtot  | ENS por exceder el límite el Indicador SAIFI calculado por La Distribuidora considerando todas las Interrupciones, para área de densidad de carga baja | Decimal |
+| ENSAIDISistemaUtot  | ENS por exceder el límite el Indicador SAIDI calculado por La Distribuidora considerando todas las Interrupciones, para área de densidad de carga alta | Decimal |
+| ENSAIDISistemaRtot  | ENS por exceder el límite el Indicador SAIDI calculado por La Distribuidora considerando todas las Interrupciones, para área de densidad de carga baja | Decimal |
+| SAIDIUSFM           | Indicador SAIDI calculado por la Distribuidora sin F. Mayor para área de densidad de carga alta | Decimal |
+| SAIDIrsfm           | Indicador SAIDI calculado por la Distribuidora sin F. Mayor para área de densidad de carga baja | Decimal |
+| SAIDIutot           | Indicador SAIDI calculado por la Distribuidora Total para área de densidad de carga alta | Decimal |
+| SAIDIrtot           | Indicador SAIDI calculado por la Distribuidora Total para área de densidad de carga baja | Decimal |
+| SAIFIusfm           | Indicador SAIFI calculado por la Distribuidora sin F. Mayor para área de densidad de carga alta | Decimal |
+| SAIFIrsfm           | Indicador SAIFI calculado por la Distribuidora sin F. Mayor para área de densidad de carga baja | Decimal |
+| SAIFIutot           | Indicador SAIFI calculado por la Distribuidora Total para área de densidad de carga alta | Decimal |
+| SAIFIrtot           | Indicador SAIFI calculado por la Distribuidora Total para área de densidad de carga baja | Decimal |
+
+Nota:
+A los efectos de cálculo de la energía no suministrada del sistema, por excederse tanto los indicadores individuales como los globales, se detallan las respectivas fórmulas a aplicar en cada caso.
+
+Indicadores Individuales:
+
+\[
+ENSSAIDIUsuario = DUsuario \left[ \frac{(SAIDI – SAIDI límite)}{Tm} \right]
+\]
+
+\[
+ENSSAIFIUsuario = DUsuario \left[ \frac{(SAIFI – SAIFI límite) (SAIDI/SAIFI)}{Tm} \right]
+\]
+
+Indicadores Globales (Densidad de carga alta y baja):
+
+\[
+ENSTTIK = DSistema \left[ \frac{(TTIK  - TTIK límite)}{Tm} \right]
+\]
+
+\[
+ENSFMIK = DSistema \left[ \frac{(FMIK - FMIK límite) (TTIK /FMIK)}{Tm} \right]
+\]
+
+\[
+ENSSAIDISistema = DSistema \left[ \frac{(SAIDI – SAIDI límite)}{Tm} \right]
+\]
+
+\[
+ENSSAIFISistema = DSistema \left[ \frac{(SAIFI  – SAIFI límite) (SAIDI/SAIFI)}{Tm} \right]
+\]
+
+Donde:
+
+- DSistema: Energía facturada durante el período de control para el sistema de la Distribuidora, (kWh).
+- DUsuario: Energía facturada durante el período de control para cada Usuario, (kWh).
+- Tm: Cantidad de horas del periodo de Control
+
+Los valores para TTIK, FMIK, SAIDI y CAIDI, se refieren a los valores resultantes de los índices o indicadores en el período controlado.
+
+Los valores para TTIKlímite, FMIKlímite, SAIDIlímite y SAIFIlímite, se refieren a los límites establecidos para las tolerancias de los índices o indicadores.
+
+- Los indicadores se deben calcular mensualmente a partir de la información enviada por las empresas Distribuidoras.
+- El valor característico del periodo de control (año) se calculará como la suma de los valores mensuales obtenidos.
+- Los indicadores se deberán calcular para cada Tipo de Red, desagregada en área de densidad de carga alta y baja.
+- Los usuarios de MT afectados por cada interrupción se determinarán de la tabla REP_USUARIOS.
+- Los kVA de los usuarios de MT se deberán determinar a partir de la potencia facturada (PCon) informada en la Tabla DATOS_USUARIOS considerando un Factor de Potencia (FP) igual a 0.9 (cero punto nueve).
+- Los kVA Instalados y las Potencias facturadas por los Usuarios de MT, en cada mes y para cada Tipo de Red (área de densidad de carga alta y baja) se deben calcular a partir de la tabla INSTALACIONES.
+- El Total de Usuarios en cada mes para cada Tipo de Red (área de densidad de carga alta y baja) se determina a partir de la tabla DATOS_USUARIOS considerando a todos los usuarios activos en el mes.
+- Las interrupciones de un mes determinado están asociadas con la fecha de inicio y no con la de finalización.
+- Deben considerarse el total de kVA instalados en la red inclusive los asociados de los usuarios de MT. En este caso se debe considerar los valores de potencia facturada afectados por un Factor de Potencia (FP) igual a 0.9 (cero punto nueve). Los valores se totalizan desde la tabla INSTALACIONES.
+
+TABLA: AREAS_DENSIDAD_CARGA
+
+| CAMPO          | DESCRIPCIÓN                                             | TIPO        |
+|----------------|---------------------------------------------------------|-------------|
+| IdArea         | Identificación única del área de densidad de carga       | Texto (20)  |
+| Departamento   | Departamento asociado al área de densidad de carga       | Texto (30)  |
+| Municipio      | Municipio asociado al área de densidad de carga          | Texto (30)  |
+| Usuarios       | Cantidad de usuarios asociada al área de densidad de carga | Entero      |
+| Habitantes     | Cantidad de habitantes asociada al área de densidad de carga | Entero      |
+| DemandaEnergia | Suma de la energía anual facturada a los usuarios de la cuadrícula (kWh) | Decimal     |
+| DemandaPotencia | Suma de la potencia asociada a los usuarios de la cuadrícula (kW) | Decimal     |
+| DensidadCarga  | A: Densidad de carga alta / B: Densidad de carga baja    | Texto (1)   |
+| Excepción      | 0: área de densidad de carga alta o baja clasificada según criterio de habitantes, potencia y cantidad de áreas contiguas. 1: área de densidad de carga alta que cumple excepción de cabecera departamental, pero no cumple criterio de habitantes, potencia y cantidad de áreas contiguas. 2: área de densidad de carga alta que cumple excepción de puertos marítimos y aeropuertos, pero no cumple criterio de habitantes, potencia y cantidad de áreas contiguas. 3: área de densidad de carga alta que cumple otras excepciones y no cumple criterio de habitantes, potencia y cantidad de áreas contiguas. | Decimal     |
+| Coordenada X   | Coordenada X (Sistema Universal Transverse Mercator –UTM-) de la esquina superior izquierda de la cuadrícula que delimita al área de densidad de carga | Decimal     |
+| Coordenada Y   | Coordenada Y (Sistema Universal Transverse Mercator –UTM-) de la esquina superior izquierda de la cuadrícula que delimita al área de densidad de carga | Decimal     |
+
+TABLA: AREA_MUNICIPIO
+
+| CAMPO          | DESCRIPCIÓN                                             | TIPO        |
+|----------------|---------------------------------------------------------|-------------|
+| Municipio      | Nombre del municipio                                     | Texto (30)  |
+| Usuarios       | Cantidad de usuarios en el municipio, a diciembre del año base de la última revisión tarifaria | Entero      |
+| Habitantes     | Cantidad de habitantes en el municipio según la publicación de DIGESTYC más reciente disponible en el año base de la última revisión tarifaria | Entero     
+
+ |
+| DensidadCarga  | A: Densidad de carga alta / B: Densidad de carga baja    | Texto (1)   |
+
+---
+
+Esto concluye la transcripción de las tablas y el formato solicitado del documento "Anexo B Metodología de Control Calidad Servicio Técnico". Si necesitas algo más, por favor házmelo saber.
